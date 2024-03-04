@@ -15,18 +15,19 @@ import ats from '../images/Interface.png'
 export const Bio = {
   name: "Nukaraju Neradabilli",
   roles: [
+    "Founder and CEO",
+    "Trizen Ventures LLP",
     "an NLP Engineer",
     "an ML Engineer",
     "a Programmer",
     "an Aspiring Data Scientist",
     "an AI Enthusiast",
-    // "Founder & CEO @ "
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/Nukaraju2003",
   resume:
-    "https://drive.google.com/file/d/1nuNFMDHxf8Uk0E3K8Q6aHX0uYezcqhwf/view",
+    "https://drive.google.com/file/d/1LvIe7oYOwHGDkdQcrutd3QMGspU5xPn7/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/nukarajuneradabilli",
   twitter: "#",
   insta: "https://www.instagram.com/nukarajuneradabilli/",

@@ -33,7 +33,7 @@ My Portfolio is a React.js application that serves as an online portfolio to sho
 ## Installation
 To run this portfolio locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Nukaraju2003/MyMan.git`
+1. Clone the repository: `git clone https://github.com/Nukaraju2003/portfolio.git`
 2. Navigate to the project directory
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm start`
@@ -53,4 +53,4 @@ Contributions are welcome! If you'd like to contribute to My Portfolio, please f
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
-# MyMan
+# Nukaraju Neradabilli   
