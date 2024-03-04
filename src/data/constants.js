@@ -4,11 +4,13 @@
 // import divya1 from '../images/divya.jpg'
 // import raju from '../images/me.jpg'
 import pandas from '../images/pandas.png'
-import port from '../images/port.png'
-import snake from '../images/snake.png'
+import port from '../images/port.jpg'
+// import snake from '../images/snake.png'
 import enlogo from '../images/enlogo.jpg'
-import water from '../images/water.png'
+import water from '../images/WQI.jpg'
 import ats from '../images/Interface.png'
+
+
 
 export const Bio = {
   name: "Nukaraju Neradabilli",
@@ -18,7 +20,7 @@ export const Bio = {
     "a Programmer",
     "an Aspiring Data Scientist",
     "an AI Enthusiast",
-    // "Founder & CEO @ TriVeda"
+    // "Founder & CEO @ "
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
@@ -129,6 +131,10 @@ export const skills = [
   {
     title: "Backend",
     skills: [
+      {
+        name: "Flask",
+        image: "https://imgs.search.brave.com/FSSB7lW8zMLsWB4Zbv9G_xAo9UA6mREZszyVmRarDH8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0M1/NjEyQVFHUmVOSHV1/Z3hjVHcvYXJ0aWNs/ZS1jb3Zlcl9pbWFn/ZS1zaHJpbmtfNjAw/XzIwMDAvMC8xNjQ5/NDc4MjQzMjU0P2U9/MjE0NzQ4MzY0NyZ2/PWJldGEmdD1YSm9D/Um1YOGxLSmQyaU5W/b0pLTzFyeEpxTi15/NWZYQmVXQnlTSmZT/NV9J.jpeg",
+      },
       {
         name: "Node Js",
         image: "https://nodejs.org/static/images/logo.svg",
@@ -353,43 +359,43 @@ export const projects = [
   // },
   {
     id: 1,
-    title: "Smart Applicant Tracking System",
-    date: "Jul 2021",
+    title: "NLP & AI-powered Resume Matchmaker",
+    date: "Jul 2021 - Present",
     description:
-      "Developed a Streamlit-based Smart ATS using Gensim and Hugging Face Transformers for embeddings, PyPDF2 for PDF parsing, and integrated a Generative AI model for generating responses, aimed at assisting users in optimizing their resumes by providing matching scores, missing keywords, and skill enhancement recommendations.",
+      "Built Streamlit app using NLP (HuggingFace-BERT, Doc2Vec) for accurate resume-job description matching and explored Generative AI (e.g., Gemini) for potential resume improvement suggestions.",
     image: ats,
-    tags: ["Streamlit", "Gemini", "BERT", "Doc2Vec", "Cosine Similarity"],
+    tags: ["Streamlit", "Natural Language Processing (NLP)", "ATS","Text Embedding", "Gemini", "BERT", "Doc2Vec", "Cosine Similarity"],
     category: "web app",
-    github: "https://github.com/Nukaraju2003/Smart-Applicant-Tracking-System",
+    github: "https://github.com/Nukaraju2003/SmartApplicationtrackingsystem",
     // webapp: "https://whatsapp-clone-rishav.web.app",
   },
   {
   id: 2,
-  title: "Predicting Water Quality in East and West Godavari Using Machine Learning",
-  date: "Dec 2023 - Present",
+  title: "Water Quality Prediction Web App using Machine Learning",
+  date: "Dec 2023 - Jan 2024",
   description:
-    "Developed a machine learning-based predictive model using Support Vector Machines (SVM) and XGBoost algorithms to forecast water quality in the East and West Godavari rivers, enhancing environmental monitoring and decision-making processes..",
+    "Developed a Flask web app utilizing XGBoost to predict Water Quality Index (WQI) for East & West Godavari districts, India. Analyzed 3276 water quality measurements, implemented various ML algorithms (incl. hyperparameter tuning) achieving 89% water potability prediction accuracy with XGBoost.",
   image:
     water,
   tags: [
     "Python",
-    "Support Vector Machines (SVM)",
-   "XGBoost",
-  "Model Evaluation",
-  "Feature Engineering",
-  "Feature Selection",
     "Data Processing",
+    "ML algorithms",
+    "Hyperparameter Tuning",
+  "Model Evaluation",
+  "Model Deployment",
+    "Flask",
   ],
-  category: "machine learning",
-  github: "#",
-  webapp: "#",
+  category: "web app",
+  github: "https://github.com/Nukaraju2003/flask_deploy_wqi",
+  webapp: "https://wqi-prediction.onrender.com/",
 },
 {
   id: 3,
   title: "Personal Portfolio Website",
   date: "Dec 2023",
   description:
-    "Developed a full-stack portfolio that accurately and efficiently displays my profile.",
+    "Developing a full-stack portfolio that accurately and efficiently displays my profile.",
   image: port,
   tags: ["React Js", "MongoDb", "Node Js", "Express Js"],
   category: "web app",
@@ -410,17 +416,17 @@ export const projects = [
   //   },
   // ],
 },
-{
-  id: 4,
-  title: "Gesture-controlled Snake Game",
-  date: "Jan 2023 - Mar 2023",
-  description:
-    "Our goal is to move the snake game and eat as many food blocks as possible using our hand gestures. The technical skills I used in this project were HTML5, CSS3, Javascript,P5.js, and Teachable Machine(web-based tool)YouTube..",
-  image: snake,
-  tags: ["HTML", "CSS", "JavaScript", "p5.js"],
-  category: "web app",
-  github: "https://github.com/Nukaraju2003/Nukaraju2003.github.io/tree/main/readgestures",
-  webapp: "https://nukaraju2003.github.io/readgestures/", 
+// {
+//   id: 4,
+//   title: "Gesture-controlled Snake Game",
+//   date: "Jan 2023 - Mar 2023",
+//   description:
+//     "Our goal is to move the snake game and eat as many food blocks as possible using our hand gestures. The technical skills I used in this project were HTML5, CSS3, Javascript,P5.js, and Teachable Machine(web-based tool)YouTube..",
+//   image: snake,
+//   tags: ["HTML", "CSS", "JavaScript", "p5.js"],
+//   category: "web app",
+//   github: "https://github.com/Nukaraju2003/Nukaraju2003.github.io/tree/main/readgestures",
+//   webapp: "https://nukaraju2003.github.io/readgestures/", 
   // member: [
   //   {
   //     name: "Nukaraju Neradabilli",
@@ -435,7 +441,7 @@ export const projects = [
   //     github: "https://github.com/upasana0710",
   //   },
   // ],
-},
+// },
 //   {
 //     id: 0,
 //     title: "Full stack Blogging Application",
