@@ -38,16 +38,6 @@ export const skills = [
   {
     title: "ML frameworks & topics",
     skills: [
-      // {
-      //   name: "Python",
-      //   image:
-      //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-      // },
-      {
-        name: "Natural Language Processing",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBWc4VkJUE-EL_iVPZ_pm1kU5ItBl4Cfsrw",
-      },
       {
         name: "NumPy",
         image:
@@ -59,14 +49,14 @@ export const skills = [
           pandas,
       },
       {
-        name: "TensorFlow",
+        name: "Natural Language Processing",
         image:
-          "https://ymgsapo.com/wp-content/uploads/2018/12/Tensorflow_logo.svg.png",
-      },
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBWc4VkJUE-EL_iVPZ_pm1kU5ItBl4Cfsrw",
+      }, 
       {
-        name: "PyTorch",
+        name: "Seaborn",
         image:
-          "https://th.bing.com/th/id/OIP.8AaAYxLb-VOgGUW8V8JXQAHaHa?rs=1&pid=ImgDetMain",
+          "https://imgs.search.brave.com/Gn3_ddAQvEAw7VIoGeOXV3Tv1U0VdqpHtUnj4dcjRY4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kYXRh/c2NpZW50ZXN0LmNv/bS9lbi93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvOS8yMDIz/LzEwL3NlYWJvcm4u/d2VicA",
       },
       {
         name: "Scikit-learn",
@@ -74,9 +64,29 @@ export const skills = [
           "https://th.bing.com/th/id/OIP.5_YtOx3uIf1aCjZmAdME1AAAAA?rs=1&pid=ImgDetMain",
       },
       {
+        name: "Huggingface",
+        image:
+          "https://imgs.search.brave.com/pY7vHn0qFjP800r2U3Ht950aGJtTsMbUp_82ITnQCuY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9odWdn/aW5nZmFjZS5jby9m/cm9udC9hc3NldHMv/aHVnZ2luZ2ZhY2Vf/bG9nby1ub2JvcmRl/ci5zdmc.svg",
+      },
+      {
+        name: "Matplotlib",
+        image:
+          "https://imgs.search.brave.com/qFoH5yfgJTeOWDA9zClRZnVfkWqcvgXmf7c5ol6OJ94/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi84Lzg0L01h/dHBsb3RsaWJfaWNv/bi5zdmcvMjIwcHgt/TWF0cGxvdGxpYl9p/Y29uLnN2Zy5wbmc",
+      },
+      {
+        name: "TensorFlow",
+        image:
+          "https://ymgsapo.com/wp-content/uploads/2018/12/Tensorflow_logo.svg.png",
+      },
+      {
         name: "Keras",
         image:
           "https://th.bing.com/th/id/OIP.f7xQtS1hOKlnjNbWTx6wRwAAAA?rs=1&pid=ImgDetMain",
+      },
+      {
+        name: "PyTorch",
+        image:
+          "https://th.bing.com/th/id/OIP.8AaAYxLb-VOgGUW8V8JXQAHaHa?rs=1&pid=ImgDetMain",
       },
     ],
   },
