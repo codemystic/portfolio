@@ -166,6 +166,11 @@ export const skills = [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
       },
       {
+        name: "Data Structures",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTREy-fzeS9qXjXXYqvXmzE4fwv3WoqRD4Uhroz38dDPhponWbJTvQHa4YB1NTy_zb08k",
+      },
+      {
         name: "Java",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
