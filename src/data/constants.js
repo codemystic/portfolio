@@ -391,15 +391,15 @@ export const projects = [
   github: "https://github.com/Nukaraju2003/flask_deploy_wqi",
   webapp: "https://wqi-prediction.onrender.com/",
 },
-{
-  id: 3,
-  title: "Personal Portfolio Website",
-  date: "Dec 2023",
-  description:
-    "Developing a full-stack portfolio that accurately and efficiently displays my profile.",
-  image: port,
-  tags: ["React Js", "MongoDb", "Node Js", "Express Js"],
-  category: "web app",
+// {
+//   id: 3,
+//   title: "Personal Portfolio Website",
+//   date: "Dec 2023",
+//   description:
+//     "Developing a full-stack portfolio that accurately and efficiently displays my profile.",
+//   image: port,
+//   tags: ["React Js", "MongoDb", "Node Js", "Express Js"],
+//   category: "web app",
   // github: "https://github.com/rishavchanda/Podstream",
   // webapp: "https://podstream.netlify.app/",
   // member: [
@@ -416,7 +416,7 @@ export const projects = [
   //     github: "https://github.com/upasana0710",
   //   },
   // ],
-},
+// },
 // {
 //   id: 4,
 //   title: "Gesture-controlled Snake Game",
