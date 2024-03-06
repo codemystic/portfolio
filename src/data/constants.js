@@ -46,7 +46,7 @@ export const skills = [
       {
         name: "Natural Language Processing",
         image:
-          "https://media.licdn.com/dms/image/D4D12AQHYuDNJonlBWA/article-inline_image-shrink_1500_2232/0/1701986981251?e=1713398400&v=beta&t=tAEfwaZ1TCj6t1qG_kRjWhkFXBdNkAM1cLf9381J748",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBWc4VkJUE-EL_iVPZ_pm1kU5ItBl4Cfsrw",
       },
       {
         name: "NumPy",
