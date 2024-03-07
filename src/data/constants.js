@@ -60,7 +60,7 @@ export const skills = [
       {
         name: "SQL",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+          "https://imgs.search.brave.com/G6nmo1F0-Q_eLPtu24jg_2ryvihj4MJQkiS2b5aA2SU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzZmL1NxbF9kYXRh/YmFzZV9zaG9ydGN1/dF9pY29uLnBuZw",
       },
     ]
   },
