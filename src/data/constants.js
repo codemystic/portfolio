@@ -15,8 +15,8 @@ import ats from '../images/Interface.png'
 export const Bio = {
   name: "Nukaraju Neradabilli",
   roles: [
-    "Founder and CEO",
-    "Trizen Ventures LLP",
+    // "Founder and CEO",
+    // "Trizen Ventures LLP",
     "an NLP Engineer",
     "an ML Engineer",
     "a Programmer",
