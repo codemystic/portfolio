@@ -4,7 +4,7 @@
 // import divya1 from '../images/divya.jpg'
 // import raju from '../images/me.jpg'
 import pandas from '../images/pandas.png'
-import port from '../images/port.jpg'
+// import port from '../images/port.jpg'
 // import snake from '../images/snake.png'
 import enlogo from '../images/enlogo.jpg'
 import water from '../images/WQI.jpg'
@@ -21,7 +21,7 @@ export const Bio = {
     "an ML Engineer",
     "a Programmer",
     "an Aspiring Data Scientist",
-    "an AI Enthusiast",
+    // "an AI Enthusiast",
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
@@ -36,7 +36,76 @@ export const Bio = {
 
 export const skills = [
   {
-    title: "ML frameworks & topics",
+    title: "Programming languages",
+    skills: [
+      {
+        name: "Python",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      },
+      {
+        name: "Data Structures",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTREy-fzeS9qXjXXYqvXmzE4fwv3WoqRD4Uhroz38dDPhponWbJTvQHa4YB1NTy_zb08k",
+      },
+      {
+        name: "Java",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      },
+      {
+        name: "JavaScript",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+      },
+      {
+        name: "SQL",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+      },
+    ]
+  },
+  // {
+  //   title: "Data Science/ Machine Learning/ Deep Learning",
+  //   skills: [
+  //     {
+  //       name: "Python",
+  //       image:
+  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  //     },      
+  //     {
+  //       name: "Supervised learning algos",
+  //       image:
+  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  //     },
+  //     {
+  //       name: "Unsupervised learning algos",
+  //       image:
+  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  //     },
+  //     {
+  //       name: "CNN",
+  //       image:
+  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  //     },
+  //     {
+  //       name: "EDA",
+  //       image:
+  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  //     },
+  //     // {
+  //     //   name: "Feature engineering",
+  //     //   image:
+  //     //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  //     // },
+  //     // {
+  //     //   name: "Feature selection",
+  //     //   image:
+  //     //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  //     // },
+  //   ],
+  // },
+  {
+    title: "Python packages and frameworks",
     skills: [
       {
         name: "NumPy",
@@ -48,11 +117,11 @@ export const skills = [
         image:
           pandas,
       },
-      {
-        name: "Natural Language Processing",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBWc4VkJUE-EL_iVPZ_pm1kU5ItBl4Cfsrw",
-      }, 
+      // {
+      //   name: "Natural Language Processing",
+      //   image:
+      //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBWc4VkJUE-EL_iVPZ_pm1kU5ItBl4Cfsrw",
+      // }, 
       {
         name: "Seaborn",
         image:
@@ -63,11 +132,11 @@ export const skills = [
         image:
           "https://th.bing.com/th/id/OIP.5_YtOx3uIf1aCjZmAdME1AAAAA?rs=1&pid=ImgDetMain",
       },
-      {
-        name: "Huggingface",
-        image:
-          "https://imgs.search.brave.com/pY7vHn0qFjP800r2U3Ht950aGJtTsMbUp_82ITnQCuY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9odWdn/aW5nZmFjZS5jby9m/cm9udC9hc3NldHMv/aHVnZ2luZ2ZhY2Vf/bG9nby1ub2JvcmRl/ci5zdmc.svg",
-      },
+      // {
+      //   name: "Huggingface",
+      //   image:
+      //     "https://imgs.search.brave.com/pY7vHn0qFjP800r2U3Ht950aGJtTsMbUp_82ITnQCuY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9odWdn/aW5nZmFjZS5jby9m/cm9udC9hc3NldHMv/aHVnZ2luZ2ZhY2Vf/bG9nby1ub2JvcmRl/ci5zdmc.svg",
+      // },
       {
         name: "Matplotlib",
         image:
@@ -90,9 +159,37 @@ export const skills = [
       },
     ],
   },
-  // {
-  //   title: "Frontend",
-  //   skills: [
+  {
+    title: "Web Development",
+    skills: [
+      {
+        name: "HTML",
+        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+      },
+      {
+        name: "CSS",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+      },
+      {
+        name: "JavaScript",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+      },
+      {
+        name: "Bootstrap",
+        image:
+          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
+      },
+      {
+        name: "Python",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      },
+      {
+        name: "Flask",
+        image: "https://imgs.search.brave.com/FSSB7lW8zMLsWB4Zbv9G_xAo9UA6mREZszyVmRarDH8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0M1/NjEyQVFHUmVOSHV1/Z3hjVHcvYXJ0aWNs/ZS1jb3Zlcl9pbWFn/ZS1zaHJpbmtfNjAw/XzIwMDAvMC8xNjQ5/NDc4MjQzMjU0P2U9/MjE0NzQ4MzY0NyZ2/PWJldGEmdD1YSm9D/Um1YOGxLSmQyaU5W/b0pLTzFyeEpxTi15/NWZYQmVXQnlTSmZT/NV9J.jpeg",
+      },
       // {
       //   name: "React Js",
       //   image:
@@ -118,8 +215,8 @@ export const skills = [
       //   image:
       //     "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png",
       // },
-  //   ],
-  // },
+    ],
+  },
   // {
   //   title: "Backend",
   //   skills: [
@@ -158,46 +255,9 @@ export const skills = [
   // },
 
   {
-    title: "Others",
+    title: "Version Control",
     skills: [
-      {
-        name: "Python",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-      },
-      {
-        name: "Data Structures",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTREy-fzeS9qXjXXYqvXmzE4fwv3WoqRD4Uhroz38dDPhponWbJTvQHa4YB1NTy_zb08k",
-      },
-      {
-        name: "Java",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-      },
-      {
-        name: "HTML",
-        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
-      },
-      {
-        name: "CSS",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
-      },
-      {
-        name: "JavaScript",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-      },
-      {
-        name: "Bootstrap",
-        image:
-          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
-      },
-      {
-        name: "Flask",
-        image: "https://imgs.search.brave.com/FSSB7lW8zMLsWB4Zbv9G_xAo9UA6mREZszyVmRarDH8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0M1/NjEyQVFHUmVOSHV1/Z3hjVHcvYXJ0aWNs/ZS1jb3Zlcl9pbWFn/ZS1zaHJpbmtfNjAw/XzIwMDAvMC8xNjQ5/NDc4MjQzMjU0P2U9/MjE0NzQ4MzY0NyZ2/PWJldGEmdD1YSm9D/Um1YOGxLSmQyaU5W/b0pLTzFyeEpxTi15/NWZYQmVXQnlTSmZT/NV9J.jpeg",
-      },
+
       {
         name: "Git",
         image:
@@ -208,36 +268,6 @@ export const skills = [
         image:
           "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
-      // {
-      //   name: "Docker",
-      //   image:
-      //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-      // },
-      // {
-      //   name: "Netlify",
-      //   image:
-      //     "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-      // },
-      // {
-      //   name: "VS Code",
-      //   image:
-      //     "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
-      // },
-      // {
-      //   name: "Postman",
-      //   image:
-      //     "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-      // },
-      // {
-      //   name: "Adobe XD",
-      //   image:
-      //     "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
-      // },
-      // {
-      //   name: "Figma",
-      //   image:
-      //     "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
-      // },
     ],
   },
 ];
