@@ -190,6 +190,18 @@ export const skills = [
         name: "Flask",
         image: "https://imgs.search.brave.com/FSSB7lW8zMLsWB4Zbv9G_xAo9UA6mREZszyVmRarDH8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0M1/NjEyQVFHUmVOSHV1/Z3hjVHcvYXJ0aWNs/ZS1jb3Zlcl9pbWFn/ZS1zaHJpbmtfNjAw/XzIwMDAvMC8xNjQ5/NDc4MjQzMjU0P2U9/MjE0NzQ4MzY0NyZ2/PWJldGEmdD1YSm9D/Um1YOGxLSmQyaU5W/b0pLTzFyeEpxTi15/NWZYQmVXQnlTSmZT/NV9J.jpeg",
       },
+      {
+        name: "Amazon Web Services (AWS)",
+        image: "https://imgs.search.brave.com/oeZjwCIkHNQecCCzkK_X45WNIavPDrmCJ1-36IcVAYw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkzL0Ft/YXpvbl9XZWJfU2Vy/dmljZXNfTG9nby5z/dmcvMjIwcHgtQW1h/em9uX1dlYl9TZXJ2/aWNlc19Mb2dvLnN2/Zy5wbmc",
+      },
+      // {
+      //   name: "Microsoft Azure",
+      //   image: "https://imgs.search.brave.com/FSSB7lW8zMLsWB4Zbv9G_xAo9UA6mREZszyVmRarDH8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0M1/NjEyQVFHUmVOSHV1/Z3hjVHcvYXJ0aWNs/ZS1jb3Zlcl9pbWFn/ZS1zaHJpbmtfNjAw/XzIwMDAvMC8xNjQ5/NDc4MjQzMjU0P2U9/MjE0NzQ4MzY0NyZ2/PWJldGEmdD1YSm9D/Um1YOGxLSmQyaU5W/b0pLTzFyeEpxTi15/NWZYQmVXQnlTSmZT/NV9J.jpeg",
+      // },
+      {
+        name: "Google Cloud Platform (GCP)",
+        image: "https://imgs.search.brave.com/s-XFetu1DFjrZu-TqpDmC2BNU1dBci-QPY3Leeg9Q8o/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9wbGF5/LWxoLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS9SeW9RVG1Ibnhz/eFBZYWJzRVRtV1ZY/SHRMb3JWaF95T080/OGhzZHYyVm1JLVVr/aTRxdDVjNXZWMWNp/Y0pPRFY1NkE0",
+      },
       // {
       //   name: "React Js",
       //   image:
