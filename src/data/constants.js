@@ -291,7 +291,7 @@ export const experiences = [
     role: "ML Project Intern",
     company: "Enligence Technology Labs",
     date: "June 2023 - July 2023",
-    desc: "Developed an automated system for interview grading purposes. Proficient in audio processing, transcription, and data augmentation using Python libraries and OpenAI’s Whisper and GPT-3.5 Turbo models. Skilled in evaluating transcription quality and performing speaker diarization, with expertise in data processing and analysis using Python.",
+    desc: "Engineered an advanced automated grading system leveraging speech recognition and NLP to boost assessment efficiency, incorporating audio preprocessing and WhisperX Speaker Diarization for enhanced accuracy. Refined transcription fidelity by selecting top-performing Whisper models, gauged via WER and BLEU scores, and evaluated spoken responses with OpenAI’s GPT-3.5-turbo, focusing on fluency and engagement. Quantified grading performance against human benchmarks using MAE, RMSE, and Pearson Correlation, and visualized data insights through histograms and bar graphs for clear AI-human grading comparisons.",
     skills: [
       "Python",
       "Speaker Diarization",
@@ -425,7 +425,7 @@ export const projects = [
     title: "NLP & AI-powered Resume Matchmaker",
     date: "Jul 2021 - Present",
     description:
-      "Built Streamlit app using NLP (HuggingFace-BERT, Doc2Vec) for accurate resume-job description matching and explored Generative AI (e.g., Gemini) for potential resume improvement suggestions.",
+      "Developed a Streamlit application utilizing NLP technologies (HuggingFace-BERT, Doc2Vec, Generative AI) to ensure precise matching between resumes and job descriptions. Investigated the use of Generative AI (such as Gemini) to generate innovative suggestions for enhancing resume content. Evaluated BERT, Doc2Vec, and Generative AI model precision with MSE and RMSE on 29 Student resumes.",
     image: ats,
     tags: ["Streamlit", "Natural Language Processing (NLP)", "ATS","Text Embedding", "Gemini", "BERT", "Doc2Vec", "Cosine Similarity"],
     category: "web app",
@@ -437,7 +437,7 @@ export const projects = [
   title: "Water Quality Prediction Web App using Machine Learning",
   date: "Dec 2023 - Jan 2024",
   description:
-    "Developed a Flask web app utilizing XGBoost to predict Water Quality Index (WQI) for East & West Godavari districts, India. Analyzed 3276 water quality measurements, implemented various ML algorithms (incl. hyperparameter tuning) achieving 89% water potability prediction accuracy with XGBoost.",
+    "Engineered and launched a Flask web app leveraging XGBoost to forecast the Water Quality Index (WQI) across East and West Godavari districts, India. Conducted a comprehensive analysis of 3276 water samples and rigorously tested various ML models, culminating in an impressive 89 % water potability accuracy with XGBoost after meticulous hyperparameter tuning.",
   image:
     water,
   tags: [
