@@ -9,8 +9,10 @@ import pandas from '../images/pandas.png'
 import enlogo from '../images/enlogo.jpg'
 import water from '../images/WQI.jpg'
 import ats from '../images/Interface.png'
-
-
+import amazon from '../images/amazon_logo.jpeg'
+import trizen from '../images/Trizen.png'
+import iiith from '../images/spl_iiith_logo.jpeg'
+import tensorflow from '../images/tensorflow.jpg'
 
 export const Bio = {
   name: "Nukaraju Neradabilli",
@@ -20,7 +22,7 @@ export const Bio = {
     "an NLP Engineer",
     "an ML Engineer",
     "a Programmer",
-    "an Aspiring Data Scientist",
+    "a full stack developer",
     // "an AI Enthusiast",
   ],
   description:
@@ -145,7 +147,7 @@ export const skills = [
       {
         name: "TensorFlow",
         image:
-          "https://ymgsapo.com/wp-content/uploads/2018/12/Tensorflow_logo.svg.png",
+        tensorflow,
       },
       {
         name: "Keras",
@@ -163,11 +165,11 @@ export const skills = [
     title: "Web Development",
     skills: [
       {
-        name: "HTML",
+        name: "HTML5",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
       },
       {
-        name: "CSS",
+        name: "CSS3",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
       },
@@ -182,6 +184,11 @@ export const skills = [
           "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
       },
       {
+        name: "React Js",
+        image:
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+      },
+      {
         name: "Python",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
@@ -194,18 +201,13 @@ export const skills = [
         name: "Amazon Web Services (AWS)",
         image: "https://imgs.search.brave.com/oeZjwCIkHNQecCCzkK_X45WNIavPDrmCJ1-36IcVAYw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkzL0Ft/YXpvbl9XZWJfU2Vy/dmljZXNfTG9nby5z/dmcvMjIwcHgtQW1h/em9uX1dlYl9TZXJ2/aWNlc19Mb2dvLnN2/Zy5wbmc",
       },
-      // {
-      //   name: "Microsoft Azure",
-      //   image: "https://imgs.search.brave.com/FSSB7lW8zMLsWB4Zbv9G_xAo9UA6mREZszyVmRarDH8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0M1/NjEyQVFHUmVOSHV1/Z3hjVHcvYXJ0aWNs/ZS1jb3Zlcl9pbWFn/ZS1zaHJpbmtfNjAw/XzIwMDAvMC8xNjQ5/NDc4MjQzMjU0P2U9/MjE0NzQ4MzY0NyZ2/PWJldGEmdD1YSm9D/Um1YOGxLSmQyaU5W/b0pLTzFyeEpxTi15/NWZYQmVXQnlTSmZT/NV9J.jpeg",
-      // },
       {
-        name: "Google Cloud Platform (GCP)",
-        image: "https://imgs.search.brave.com/s-XFetu1DFjrZu-TqpDmC2BNU1dBci-QPY3Leeg9Q8o/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9wbGF5/LWxoLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS9SeW9RVG1Ibnhz/eFBZYWJzRVRtV1ZY/SHRMb3JWaF95T080/OGhzZHYyVm1JLVVr/aTRxdDVjNXZWMWNp/Y0pPRFY1NkE0",
+        name: "Microsoft Azure",
+        image: "https://imgs.search.brave.com/FSSB7lW8zMLsWB4Zbv9G_xAo9UA6mREZszyVmRarDH8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0M1/NjEyQVFHUmVOSHV1/Z3hjVHcvYXJ0aWNs/ZS1jb3Zlcl9pbWFn/ZS1zaHJpbmtfNjAw/XzIwMDAvMC8xNjQ5/NDc4MjQzMjU0P2U9/MjE0NzQ4MzY0NyZ2/PWJldGEmdD1YSm9D/Um1YOGxLSmQyaU5W/b0pLTzFyeEpxTi15/NWZYQmVXQnlTSmZT/NV9J.jpeg",
       },
       // {
-      //   name: "React Js",
-      //   image:
-      //     "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+      //   name: "Google Cloud Platform (GCP)",
+      //   image: "https://imgs.search.brave.com/s-XFetu1DFjrZu-TqpDmC2BNU1dBci-QPY3Leeg9Q8o/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9wbGF5/LWxoLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS9SeW9RVG1Ibnhz/eFBZYWJzRVRtV1ZY/SHRMb3JWaF95T080/OGhzZHYyVm1JLVVr/aTRxdDVjNXZWMWNp/Y0pPRFY1NkE0",
       // },
       // {
       //   name: "Redux",
@@ -286,7 +288,41 @@ export const skills = [
 
 export const experiences = [
   {
-    id: 0,
+    id: 4,
+    img: iiith,
+    role: "Research Intern",
+    company: "Speech Processing Lab - IIIT Hyderabad ",
+    date: "Feb - Jun 2024",
+    desc: "Worked with ASR, VITS TTS, pydub, WhisperX, focusing on prosody manipulation for natural tone and utilizing BERT for NLP tasks.",
+    skills: [
+      "Python",
+      "Numpy",
+      "Pandas",
+      "Scikit-Learn",
+      "keras",
+      "Tensorflow"
+    ],
+    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
+  },
+    {
+    id: 1,
+    img: trizen,
+    role: "ML Engineer Intern",
+    company: "Trizen Ventures LLP",
+    date: "Feb - Jun 2024",
+    desc: "Executed data scraping with Python to categorize and analyze top-performing stocks and mutual funds by sector. Developed AI/ML solutions using Siamese networks, LSTM, BERT, and GPT models with technologies like OpenAI, WhisperX, Nvidia NeMo, and Pyannote for advanced emotion and voice analysis.",
+    skills: [
+      "Python",
+      "Numpy",
+      "Pandas",
+      "Scikit-Learn",
+      "keras",
+      "Tensorflow"
+    ],
+    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
+  },
+  {
+    id: 2,
     img: enlogo, 
     role: "ML Project Intern",
     company: "Enligence Technology Labs",
@@ -306,8 +342,8 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
-    img: enlogo,
+    id: 3,
+    img: amazon,
     role: "Apprenticeship Machine Learning School Grad", 
     company: "Amazon",
     date: "Jul 2022 - Jul 2022",
@@ -347,25 +383,6 @@ export const experiences = [
   //     "XML",
   //     "Figma",
   //   ],
-  // },
-  // {
-  //   id: 4,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-  //   role: "Android Developer Intern",
-  //   company: "Rudraksha Welffare Foundation",
-  //   date: "June 2021 - Oct 2021",
-  //   desc: "As an Android Developer Intern at Rudraksha Welfare Foundation from June 2021 to October 2021, I gained valuable hands-on experience in application development. During my tenure, I contributed to the development of the application's back-end cloud functions using Firebase and implemented a front-end with the MVVM structure, which was designed using Figma. I also added a one-to-one video call feature, conceptualized new features, and optimized app performance. This internship helped me enhance my skills in Android development and gave me an opportunity to work in a collaborative team environment.",
-  //   skills: [
-  //     "Android",
-  //     "Java",
-  //     "Kotlin",
-  //     "XML",
-  //     "Node Js",
-  //     "Cloud Firestore",
-  //     "Firebase",
-  //     "Figma",
-  //   ],
-  //   doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
   // },
 ];
 
