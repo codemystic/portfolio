@@ -6,18 +6,17 @@
 import pandas from '../images/pandas.png'
 // import port from '../images/port.jpg'
 // import snake from '../images/snake.png'
-import enlogo from '../images/enlogo.jpg'
 import water from '../images/WQI.jpg'
 import ats from '../images/Interface.png'
 import amazon from '../images/amazon_logo.jpeg'
 import trizen from '../images/Trizen.png'
-import iiith from '../images/spl_iiith_logo.jpeg'
+import cognitbots from '../images/cognitbots_logo.jpeg'
 import tensorflow from '../images/tensorflow.jpg'
 
 export const Bio = {
   name: "Nukaraju Neradabilli",
   roles: [
-    // "Founder and CEO",
+    "Founder and CEO",
     // "Trizen Ventures LLP",
     "an NLP Engineer",
     "an ML Engineer",
@@ -289,10 +288,10 @@ export const skills = [
 export const experiences = [
   {
     id: 4,
-    img: iiith,
-    role: "Research Intern",
-    company: "Speech Processing Lab - IIIT Hyderabad ",
-    date: "Feb - Jun 2024",
+    img: cognitbots,
+    role: "AI Intern",
+    company: "CognitBotz Solutions",
+    date: "Sep 2024 - Present",
     desc: "Worked with ASR, VITS TTS, pydub, WhisperX, focusing on prosody manipulation for natural tone and utilizing BERT for NLP tasks.",
     skills: [
       "Python",
@@ -307,9 +306,9 @@ export const experiences = [
     {
     id: 1,
     img: trizen,
-    role: "ML Engineer Intern",
+    role: "Founder and CEO",
     company: "Trizen Ventures LLP",
-    date: "Feb - Jun 2024",
+    date: "Feb - Present",
     desc: "Executed data scraping with Python to categorize and analyze top-performing stocks and mutual funds by sector. Developed AI/ML solutions using Siamese networks, LSTM, BERT, and GPT models with technologies like OpenAI, WhisperX, Nvidia NeMo, and Pyannote for advanced emotion and voice analysis.",
     skills: [
       "Python",
@@ -321,26 +320,26 @@ export const experiences = [
     ],
     // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
   },
-  {
-    id: 2,
-    img: enlogo, 
-    role: "ML Project Intern",
-    company: "Enligence Technology Labs",
-    date: "June 2023 - July 2023",
-    desc: "Engineered an advanced automated grading system leveraging speech recognition and NLP to boost assessment efficiency, incorporating audio preprocessing and WhisperX Speaker Diarization for enhanced accuracy. Refined transcription fidelity by selecting top-performing Whisper models, gauged via WER and BLEU scores, and evaluated spoken responses with OpenAI’s GPT-3.5-turbo, focusing on fluency and engagement. Quantified grading performance against human benchmarks using MAE, RMSE, and Pearson Correlation, and visualized data insights through histograms and bar graphs for clear AI-human grading comparisons.",
-    skills: [
-      "Python",
-      "Speaker Diarization",
-      "Segmentation",
-      "Data Augmentation",
-      "OpenAI's Whisper",
-      "GPT Models",
-      "pyannote",
-      "NeMo",
-      "Whisperx",
-      "NeMo"
-    ],
-  },
+  // {
+  //   id: 2,
+  //   img: enlogo, 
+  //   role: "ML Project Intern",
+  //   company: "Enligence Technology Labs",
+  //   date: "June 2023 - July 2023",
+  //   desc: "Engineered an advanced automated grading system leveraging speech recognition and NLP to boost assessment efficiency, incorporating audio preprocessing and WhisperX Speaker Diarization for enhanced accuracy. Refined transcription fidelity by selecting top-performing Whisper models, gauged via WER and BLEU scores, and evaluated spoken responses with OpenAI’s GPT-3.5-turbo, focusing on fluency and engagement. Quantified grading performance against human benchmarks using MAE, RMSE, and Pearson Correlation, and visualized data insights through histograms and bar graphs for clear AI-human grading comparisons.",
+  //   skills: [
+  //     "Python",
+  //     "Speaker Diarization",
+  //     "Segmentation",
+  //     "Data Augmentation",
+  //     "OpenAI's Whisper",
+  //     "GPT Models",
+  //     "pyannote",
+  //     "NeMo",
+  //     "Whisperx",
+  //     "NeMo"
+  //   ],
+  // },
   {
     id: 3,
     img: amazon,
