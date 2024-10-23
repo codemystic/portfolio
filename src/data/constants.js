@@ -438,8 +438,8 @@ export const projects = [
   // },
   {
     id: 1,
-    title: "NLP & AI-powered Resume Matchmaker",
-    date: "Jul 2021 - Present",
+    title: "ATS using NLP & BERT for Resume Matching",
+    date: "May 2024 - Present",
     description:
       "Developed a Streamlit application utilizing NLP technologies (HuggingFace-BERT, Doc2Vec, Generative AI) to ensure precise matching between resumes and job descriptions. Investigated the use of Generative AI (such as Gemini) to generate innovative suggestions for enhancing resume content. Evaluated BERT, Doc2Vec, and Generative AI model precision with MSE and RMSE on 29 Student resumes.",
     image: ats,
