@@ -1,5 +1,5 @@
-# My Portfolio
-Welcome to my portfolio! This project showcases my skills, projects, and experiences as an ML Engineer.
+# Raju Portfolio
+This project is a React-based portfolio, structured to be easy to customize for your own details.
 
 
 
@@ -30,26 +30,22 @@ My Portfolio is a React.js application that serves as an online portfolio to sho
 - Git: A version control system for tracking changes and collaborating on projects.
 - GitHub Pages: A platform for hosting and deploying web applications.
 
-## Installation
-To run this portfolio locally, follow these steps:
+## Quick Start
+1. Install dependencies: `npm install`
+2. Start dev server: `npm start` (typically runs at `http://localhost:3001` if 3000 is taken)
 
-1. Clone the repository: `git clone https://github.com/Nukaraju2003/portfolio.git`
-2. Navigate to the project directory
-3. Install the dependencies: `npm install`
-4. Start the development server: `npm start`
-5. Open your browser and visit: `http://localhost:3000`
+## Customize
+- Edit basic info in `src/data/constants.js`:
+  - `Bio.name`, `Bio.roles`, `Bio.description`, social links
+  - `skills`, `experiences`, `education`, `projects`
+- Update theme colors and fonts in `src/themes/default.js`.
+- Change page title and icons in `public/index.html`.
 
 ## Usage
 After installing and running the project locally, you can navigate through the different sections of the portfolio using the navigation menu. Explore the About Me section to learn more about my background and skills. Visit the Projects section to see detailed information about my projects, including descriptions and screenshots. Use the Contact section to send me a message or inquiry.
 
-## Contributing
-Contributions are welcome! If you'd like to contribute to My Portfolio, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix: `git checkout -b my-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin my-feature`
-5. Open a pull request.
+## Notes
+- This setup is intended for personal/local development; GitHub deploy is optional.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
