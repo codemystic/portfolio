@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'raleway', sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Arial, sans-serif;
   background:#1C1C27;
 }
 
@@ -57,6 +57,8 @@
   position: absolute;
   top: -40px;
   left: 20px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card p {

@@ -149,13 +149,14 @@ const MemberName = styled.div`
 
 const ButtonGroup = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 12px 0px;
     gap: 12px;
 `;
 
 const Button = styled.a`
-    width: 100%;
+    width: auto;
+    min-width: 120px;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -227,7 +228,6 @@ const index = ({ openModal, setOpenModal }) => {
                     )}
                     <ButtonGroup>
                         <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>

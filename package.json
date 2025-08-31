@@ -1,5 +1,5 @@
 {
-  "name": "nukaraju-portfolio",
+  "name": "raju-portfolio",
   "version": "0.1.0",
   "homepage": "https://nukaraju-neradabilli.github.io",
   "private": true,
@@ -36,6 +36,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "start:watch": "set CHOKIDAR_USEPOLLING=true&& set WATCHPACK_POLLING=true&& react-scripts start",
+    "clean-cache": "powershell -NoProfile -Command \"Remove-Item -Recurse -Force node_modules/.cache -ErrorAction SilentlyContinue\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

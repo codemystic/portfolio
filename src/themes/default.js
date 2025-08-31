@@ -1,8 +1,9 @@
-export default {
-    // Temp fonts
+const defaultTheme = {
+    // Fonts
     fonts: {
-      title: "Space Grotesk, sans-serif",
-      main: "Space Grotesk, sans-serif"
+      title: "Open Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Arial, sans-serif",
+      main: "Open Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Arial, sans-serif",
+      mono: "JetBrains Mono, 'Fira Code', 'Consolas', 'Monaco', monospace"
     },
     // Colors for layout
     colors: {
@@ -23,4 +24,6 @@ export default {
       lg: 'screen and (max-width: 1024px)',
       xl: 'screen and (max-width: 1280px)'
     },
-  }
+  };
+
+export default defaultTheme;

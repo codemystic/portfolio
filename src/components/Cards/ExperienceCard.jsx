@@ -35,23 +35,44 @@ text-overflow: ellipsis;
 
 const Card = styled.div`
     width: 650px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    padding: 12px 16px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    padding: 28px 32px;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
+    gap: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 2px solid ${({ theme }) => theme.primary}20;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, ${({ theme }) => theme.primary}, #3b82f6, ${({ theme }) => theme.primary});
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
     }
+    
+    &:hover{
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        transform: translateY(-10px) scale(1.02);
+        border-color: ${({ theme }) => theme.primary}60;
+        
+        &::before {
+            transform: scaleX(1);
+        }
+    }
+    
     @media only screen and (max-width: 768px){
-        padding: 10px;
-        gap: 8px;
+        padding: 24px 28px;
+        gap: 16px;
         width: 300px;
     }
 
@@ -62,11 +83,7 @@ const Card = styled.div`
     &:hover ${Span}{
         overflow: visible;
         -webkit-line-clamp: unset;
-
     }
-
-    border: 0.1px solid #306EE8;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 `
 
 const Top = styled.div`
@@ -78,8 +95,16 @@ const Top = styled.div`
 const Image = styled.img`
     height: 50px;
     background-color: #000;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-top: 4px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    
     @media only screen and (max-width: 768px){
         height: 40px;
     }
@@ -94,8 +119,8 @@ const Body = styled.div`
 
 const Role = styled.div`
     font-size: 18px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
+    font-weight: 800;
+    color: ${({ theme }) => theme.text_primary};
     @media only screen and (max-width: 768px){
         font-size: 14px;
     }
@@ -103,8 +128,8 @@ const Role = styled.div`
 
 const Company = styled.div`
     font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    font-weight: 700;
+    color: ${({ theme }) => theme.text_secondary};
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }

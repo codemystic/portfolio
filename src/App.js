@@ -18,20 +18,47 @@ import Highlights from "./Highlights.jsx";
 import Testimonial from "./components/Testimonials/Testimonial.js";
 
 const Body = styled.div`
-  background-color: ${({ theme }) => theme.bg};
+  background: #fafafa;
   width: 100%;
   overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 `
 
 const Wrapper = styled.div`
-  background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
-  width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  margin: 12px 20px;
+  width: calc(100% - 40px);
+  padding: 24px 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  
+  &:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
+  }
 `
+
+const MainContent = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 2;
+  padding-top: 12px;
+`
+
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false); // Force light mode to match referenced site
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal)
+  
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
@@ -39,16 +66,23 @@ function App() {
         <Body>
           <HeroSection />
           <Highlights />
-          <Wrapper>
-            <Skills />
-            <Experience />
-          </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
-          <Wrapper>
-          {/* <Testimonial /> */}
-            <Education />
-            <Contact />
-          </Wrapper>
+          <MainContent>
+            <Wrapper>
+              <Skills />
+            </Wrapper>
+            <Wrapper>
+              <Experience />
+            </Wrapper>
+            <Wrapper>
+              <Projects openModal={openModal} setOpenModal={setOpenModal} />
+            </Wrapper>
+            <Wrapper>
+              <Education />
+            </Wrapper>
+            <Wrapper>
+              <Contact />
+            </Wrapper>
+          </MainContent>
           <Footer />
           {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />

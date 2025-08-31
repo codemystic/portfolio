@@ -3,15 +3,17 @@ import styled from 'styled-components';
 import _default from '../../themes/default';
 
 export const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
+    background: #ffffff;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     position: sticky;
     top: 0;
     z-index: 10;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     @media (max-width: 960px) {
         trastion: 0.8s all ease;
     }
@@ -41,7 +43,7 @@ export const NavLogo = styled(LinkR)`
 export const Span = styled.div`
     padding: 0 4px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 26px;
 `;
 export const NavItems = styled.ul`
     width: 100%;
@@ -59,7 +61,8 @@ export const NavItems = styled.ul`
 
 export const NavLink = styled.a`
     color: ${({ theme }) => theme.text_primary};
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 18px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
@@ -74,26 +77,50 @@ export const NavLink = styled.a`
 
 
 export const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
+  border: 2px solid ${({ theme }) => theme.primary};
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
-  border-radius: 20px;
+  border-radius: 25px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
   padding: 0 20px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.6s ease-in-out;
-    :hover {
-      background: ${({ theme }) => theme.primary};
-      color: ${({ theme }) => theme.white};     
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.2);
+  position: relative;
+  z-index: 1;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+    z-index: -1;
+  }
+  
+  :hover {
+    background: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(30, 64, 175, 0.4);
+    
+    &:before {
+      left: 100%;
     }
-    @media screen and (max-width: 768px) { 
+  }
+  
+  @media screen and (max-width: 768px) { 
     font-size: 14px;
-    }
+    padding: 0 16px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -123,6 +150,61 @@ export const MobileIcon = styled.div`
   }
 `
 
+export const HamburgerIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  z-index: 1001;
+  
+  &:hover {
+    background: rgba(139, 92, 246, 0.1);
+    transform: scale(1.05);
+  }
+  
+  .hamburger {
+    width: 24px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: ${({ theme }) => theme.text_primary};
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      transform-origin: center;
+    }
+    
+    &.active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+      
+      span:nth-child(2) {
+        opacity: 0;
+        transform: scale(0);
+      }
+      
+      span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  }
+`
+
 export const MobileMenu = styled.div`
     display: flex;
     flex-direction: column;
@@ -133,7 +215,7 @@ export const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light+99};
+    background: ${({ theme }) => theme.card_light};
     transition: all 0.6s ease-in-out;
     transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;
@@ -192,7 +274,8 @@ export const MobileMenuButton = styled.a`
 
 export  const MobileLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 18px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;

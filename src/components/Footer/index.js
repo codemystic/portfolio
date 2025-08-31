@@ -10,7 +10,9 @@ const FooterContainer = styled.div`
   padding: 2rem 0;
   display: flex;
   justify-content: center;
-  //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 24px;
 `;
 
 
@@ -80,7 +82,7 @@ const SocialMediaIcon = styled.a`
 const Copyright = styled.p`
   margin-top: 1.5rem;
   font-size: 0.9rem;
-  color: ${({ theme }) => theme.soft2};
+  color: ${({ theme }) => theme.text_secondary};
   text-align: center;
 `;
 
@@ -88,8 +90,8 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Nukaraju Neradabilli</Logo>
-         <Nav style={{backgroundColor:'rgb(28,28,39)'}}>
+        <Logo>{Bio.name}</Logo>
+         <Nav>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
@@ -103,7 +105,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2023 Nukaraju Neradabilli. All rights reserved.
+          &copy; {new Date().getFullYear()} {Bio.name}. All rights reserved.
         </Copyright>
 
       </FooterWrapper>

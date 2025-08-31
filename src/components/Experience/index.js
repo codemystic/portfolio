@@ -15,11 +15,15 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     position: relative;
-    z-index: 1;
+    z-index: 10;
     align-items: center;
-    padding: 40px 0px 80px 0px;
+    padding: 24px 0px 32px 0px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    margin: 12px;
     @media (max-width: 960px) {
-        padding: 0px;
+        padding: 20px 0px 28px 0px;
     }
 `;
 
@@ -31,18 +35,19 @@ const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1350px;
-    padding: 80px 0;
-    gap: 12px;
+    padding: 24px 0;
+    gap: 16px;
     @media (max-width: 960px) {
         flex-direction: column;
+        padding: 20px 0;
     }
 `;
 
-const Title = styled.div`
+export const Title = styled.div`
 font-size: 42px;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
+margin-top: 16px;
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
       margin-top: 12px;
@@ -50,10 +55,10 @@ margin-top: 20px;
   }
 `;
 
-const Desc = styled.div`
+export const Desc = styled.div`
     font-size: 18px;
     text-align: center;
-    max-width: 600px;
+    max-width: 700px;
     color: ${({ theme }) => theme.text_secondary};
     @media (max-width: 768px) {
         margin-top: 12px;
@@ -64,12 +69,12 @@ const Desc = styled.div`
 const TimelineSection = styled.div`
     width: 100%;
     max-width: 1000px;
-    margin-top: 10px;
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 16px;
 `;
 
 
@@ -80,7 +85,7 @@ const index = () => {
             <Wrapper>
                 <Title>Experience</Title>
                 <Desc>
-                    My work experience as a Machine Learning Engineer and working on different companies and projects.
+                    A journey of growth and innovation across diverse roles and organizations. Each experience has shaped my expertise and passion for creating impactful solutions in the ever-evolving tech landscape.
                 </Desc>
                 <TimelineSection>
                     <Timeline>

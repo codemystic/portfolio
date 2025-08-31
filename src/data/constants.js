@@ -2,21 +2,22 @@
 // import port from "../images/port.jpg"
 // import job from "../images/job.jpg"
 // import divya1 from '../images/divya.jpg'
-// import raju from '../images/me.jpg'
+import me from '../images/me.jpg'
 import pandas from '../images/pandas.png'
+import seaborn from '../images/seaborn.png'
 // import port from '../images/port.jpg'
 // import snake from '../images/snake.png'
-import water from '../images/WQI.jpg'
+import water from '../images/water.png'
 import ats from '../images/Interface.png'
 import amazon from '../images/amazon_logo.jpeg'
 import trizen from '../images/Trizen.png'
-import cognitbots from '../images/cognitbots_logo.jpeg'
 import tensorflow from '../images/tensorflow.jpg'
 
 export const Bio = {
-  name: "Nukaraju Neradabilli",
+  name: "Sunki Raju",
+  image: me,
   roles: [
-    "Founder and CEO",
+    "AI Engineer",
     // "Trizen Ventures LLP",
     "an NLP Engineer",
     "an ML Engineer",
@@ -26,12 +27,12 @@ export const Bio = {
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-  github: "https://github.com/Nukaraju2003",
+  github: "https://github.com/codemystic",
   resume:
-    "https://drive.google.com/file/d/1LvIe7oYOwHGDkdQcrutd3QMGspU5xPn7/view?usp=sharing",
-  linkedin: "https://www.linkedin.com/in/nukarajuneradabilli",
+    "https://drive.google.com/file/d/1vTNipkZ4RgBUIATKtARC70KlylCSdmAk/view?usp=showing",
+  linkedin: "https://www.linkedin.com/in/rajusunkilin",
   twitter: "#",
-  insta: "https://www.instagram.com/nukarajuneradabilli/",
+  insta: "https://www.instagram.com/xavieraju_98/",
   facebook: "#",
 };
 
@@ -125,8 +126,7 @@ export const skills = [
       // }, 
       {
         name: "Seaborn",
-        image:
-          "https://imgs.search.brave.com/Gn3_ddAQvEAw7VIoGeOXV3Tv1U0VdqpHtUnj4dcjRY4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kYXRh/c2NpZW50ZXN0LmNv/bS9lbi93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvOS8yMDIz/LzEwL3NlYWJvcm4u/d2VicA",
+        image: seaborn,
       },
       {
         name: "Scikit-learn",
@@ -199,10 +199,6 @@ export const skills = [
       {
         name: "Amazon Web Services (AWS)",
         image: "https://imgs.search.brave.com/oeZjwCIkHNQecCCzkK_X45WNIavPDrmCJ1-36IcVAYw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkzL0Ft/YXpvbl9XZWJfU2Vy/dmljZXNfTG9nby5z/dmcvMjIwcHgtQW1h/em9uX1dlYl9TZXJ2/aWNlc19Mb2dvLnN2/Zy5wbmc",
-      },
-      {
-        name: "Microsoft Azure",
-        image: "https://imgs.search.brave.com/FSSB7lW8zMLsWB4Zbv9G_xAo9UA6mREZszyVmRarDH8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0M1/NjEyQVFHUmVOSHV1/Z3hjVHcvYXJ0aWNs/ZS1jb3Zlcl9pbWFn/ZS1zaHJpbmtfNjAw/XzIwMDAvMC8xNjQ5/NDc4MjQzMjU0P2U9/MjE0NzQ4MzY0NyZ2/PWJldGEmdD1YSm9D/Um1YOGxLSmQyaU5W/b0pLTzFyeEpxTi15/NWZYQmVXQnlTSmZT/NV9J.jpeg",
       },
       // {
       //   name: "Google Cloud Platform (GCP)",
@@ -287,38 +283,20 @@ export const skills = [
 
 export const experiences = [
   {
-    id: 4,
-    img: cognitbots,
+    id: 1,
+    img: trizen,
     role: "AI Intern",
-    company: "CognitBotz Solutions",
-    date: "Sep 2024 - Present",
+    company: "Trizen Ventures LLP",
+    date: "May 2025 - Present",
     desc: "Worked with ASR, VITS TTS, pydub, WhisperX, focusing on prosody manipulation for natural tone and utilizing BERT for NLP tasks.",
     skills: [
       "Python",
-      "Numpy",
+      "NumPy",
       "Pandas",
       "Scikit-Learn",
-      "keras",
-      "Tensorflow"
+      "Keras",
+      "TensorFlow"
     ],
-    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-  },
-    {
-    id: 1,
-    img: trizen,
-    role: "Founder and CEO",
-    company: "Trizen Ventures LLP",
-    date: "Feb - Present",
-    desc: "Executed data scraping with Python to categorize and analyze top-performing stocks and mutual funds by sector. Developed AI/ML solutions using Siamese networks, LSTM, BERT, and GPT models with technologies like OpenAI, WhisperX, Nvidia NeMo, and Pyannote for advanced emotion and voice analysis.",
-    skills: [
-      "Python",
-      "Numpy",
-      "Pandas",
-      "Scikit-Learn",
-      "keras",
-      "Tensorflow"
-    ],
-    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
   },
   // {
   //   id: 2,
@@ -341,7 +319,7 @@ export const experiences = [
   //   ],
   // },
   {
-    id: 3,
+    id: 2,
     img: amazon,
     role: "Apprenticeship Machine Learning School Grad", 
     company: "Amazon",
@@ -353,10 +331,9 @@ export const experiences = [
       "OpenCV", 
       "Probabilistic Models", 
       "Sequential Learning",
-       "Artificial Neural Networks",
-       "Reinforcement Learning"
+      "Artificial Neural Networks",
+      "Reinforcement Learning"
     ],
-    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
   },
   
   // {
@@ -388,30 +365,39 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://www.static-contents.youth4work.com/university/Documents/Colleges/collegeLogo/605.png?v=20190219181738",
-    school: "Vishnu Institute of Technology, Bhimavaram",
-    date: "Jan 2022 - May 2025",
-    grade: "8.4 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Information Technology at Vishnu Institute of Technology, Bhimavaram. I have completed 5 semesters and have a CGPA of 8.37. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, and I am learning and working on exciting projects with a team of talented developers.",
-    degree: "Bachelor of Technology - BTech, Information Technology",
+    img: "https://i.imghippo.com/files/KlZ3914wuU.png",
+    school: "Gokaraju Rangaraju Institute of Engineering & Technology, Hyderabad",
+    date: "Jan 2021 - Dec 2023",
+    grade: "8.6 CGPA",
+    desc: "I completed my  Master's degree in Data Science at Gokaraju Rangaraju Institute of Engineering & Technology, Hyderabad. I have completed 4 semesters and have a CGPA of 8.6. I learned Machine Learning, Deep Learning with Artificial Intelligence integration projects, and I worked on exciting projects with a team of talented developers.",
+    degree: "Master of Technology - M.Tech, Data Science",
   },
   {
     id: 1,
-    img: "https://media-exp1.licdn.com/dms/image/C4E0BAQFGcnCCVep9bw/company-logo_200_200/0/1628767544738?e=2159024400&v=beta&t=KIoLA1FLETVcKHVi8xO2UvK7KhTm1ICw0L2CDTlaSwQ",
-    school: "Sri Chaitanya College of Education",
-    date: "Jun 2019 - July 2021",
-    grade: "A",
-    desc: "I completed my high school education at Sri Chaitanya College of Education in Visakhapatnam and received a score of 95.2 out of 100.",
-    degree: "BIEAP(XII)",
+    img: "https://i.imghippo.com/files/qIW3112yHw.webp",
+    school: "University College of Engineering & Technology, Nalgonda",
+    date: "Aug 2016 - Sep 2020",
+    grade: "7.8 CGPA",
+    desc: "I completed my graduation at University College of Engineering & Technology, Nalgonda. Focused on the theoretical and practical aspects of computer systems, software development, and information technology along with advanced topics such as Artificial Intelligence (AI), Machine Learning (ML), cybersecurity, and cloud computing.",
+    degree: "Bachelor of Technology - B.Tech, Computer Science and Engineering",
   },
   {
     id: 2,
-    img: "https://www.allschoolscolleges.com/images/school_logo/391503561228.png",
-    school: "Jawahar Navodaya Vidyalaya (JNV)",
-    date: "Jun 2014 - Jul 2019",
-    grade: "B+",
-    desc: "I completed my secondary education at Jawahar Navodaya Vidyalaya (JNV), in Vizianagaram and received a score of 88 out of 100",
-    degree: "CBSE(X)",
+    img: "https://i.imghippo.com/files/Uhh5488gSQ.png",
+    school: "Telangana Social Welfare Residential Educational Society, Vikarabad (TSWREIS)",
+    date: "Jun 2014 - Jul 2016",
+    grade: "A",
+    desc: "I completed my intermediate education at TSWREIS, in Vikarabad and received a score of 746 out of 1000",
+    degree: "Board of Intermediate Education, Telangana",
+  },
+  {
+    id: 3,
+    img: "https://i.imghippo.com/files/bV4391Xbs.png",
+    school: "Zilla Parishad High School, Pulmamidi",
+    date: "May 2014",
+    grade: "8.2 CGPA",
+    desc: "I completed my Xth standard with comprehensive curriculum that includes core subjects like Math, Science, Social Studies, and Languages, aiming to build a strong academic foundation and develop critical thinking and problem-solving skills.",
+    degree: "Secondary School Certificate (SSC)",
   },
 ];
 
@@ -445,30 +431,27 @@ export const projects = [
     image: ats,
     tags: ["Streamlit", "Natural Language Processing (NLP)", "ATS","Text Embedding", "Gemini", "BERT", "Doc2Vec", "Cosine Similarity"],
     category: "web app",
-    github: "https://github.com/Nukaraju2003/SmartApplicationtrackingsystem",
+    github: "https://github.com/codemystic/Smart-Application-Tracking-System",
     // webapp: "https://whatsapp-clone-rishav.web.app",
   },
   {
-  id: 2,
-  title: "Water Quality Prediction Web App using Machine Learning",
-  date: "Dec 2023 - Jan 2024",
-  description:
-    "Engineered and launched a Flask web app leveraging XGBoost to forecast the Water Quality Index (WQI) across East and West Godavari districts, India. Conducted a comprehensive analysis of 3276 water samples and rigorously tested various ML models, culminating in an impressive 89 % water potability accuracy with XGBoost after meticulous hyperparameter tuning.",
-  image:
-    water,
-  tags: [
-    "Python",
-    "Data Processing",
-    "ML algorithms",
-    "Hyperparameter Tuning",
-  "Model Evaluation",
-  "Model Deployment",
-    "Flask",
-  ],
-  category: "web app",
-  github: "https://github.com/Nukaraju2003/flask_deploy_wqi",
-  webapp: "https://wqi-prediction.onrender.com/",
-},
+    id: 2,
+    title: "FlatGPT, -Rentomate flats finder using OpenAI",
+    date: "Dec 2023 - Jan 2024",
+    description:
+      "A comprehensive chatbot for finding rental flats and flatmates across India with advanced distance calculation and multi-city support.",
+    image: water,
+    tags: [
+      "Python",
+      "Streamlit",
+      "OpenAI",
+      "Natural Language Processing (NLP)",
+      "Fastapi",
+    ],
+    category: "web app",
+    github: "https://github.com/codemystic/FlatGPT",
+    webapp: "https://wqi-prediction.onrender.com/",
+  },
 // {
 //   id: 3,
 //   title: "Personal Portfolio Website",
