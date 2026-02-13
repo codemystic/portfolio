@@ -452,6 +452,48 @@ export const projects = [
     github: "https://github.com/codemystic/FlatGPT",
     webapp: "https://wqi-prediction.onrender.com/",
   },
+  {
+    id: 3,
+    title: "AI-Powered Search & Document Intelligence System",
+    date: "Jan 2025 - Feb 2025",
+    description:
+      "Built an intelligent document processing solution leveraging LangChain, Generative AI, and FAISS for context-aware PDF question answering. Implemented document chunking, embeddings, and vector database retrieval to enable accurate semantic search across large documents. Developed multi-agent workflows using LLMs and CrewAI for automated government directory lookups and fraud case detection from CPIB press releases. Delivered a modular, extensible system combining document QA, entity search, and investigation workflows, demonstrating practical enterprise use cases.",
+    image:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070",
+    tags: [
+      "LangChain",
+      "Generative AI",
+      "FAISS",
+      "CrewAI",
+      "LLMs",
+      "Multi-Agent Workflows",
+      "Semantic Search",
+      "Document Intelligence",
+    ],
+    category: "machine learning",
+    github: "https://github.com/codemystic",
+  },
+  {
+    id: 4,
+    title: "AI-Powered Document & Image Summarization System",
+    date: "Dec 2024 - Jan 2025",
+    description:
+      "Developed a system to extract and summarize content from PDFs and images using LLMs (LLaMA models) with multimodal input handling. Designed workflows for PDF-to-image conversion, text extraction, and concise summarization of key ideas, main points, and important details. Implemented support for multiple file formats (PDF, JPG, PNG) with automated previews and summary generation. Enhanced usability with downloadable text summaries for easy sharing and integration into workflows.",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2070",
+    tags: [
+      "LLMs",
+      "LLaMA",
+      "Multimodal AI",
+      "PDF Processing",
+      "Image Processing",
+      "Summarization",
+      "Python",
+      "Computer Vision",
+    ],
+    category: "machine learning",
+    github: "https://github.com/codemystic",
+  },
 // {
 //   id: 3,
 //   title: "Personal Portfolio Website",
