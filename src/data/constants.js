@@ -22,7 +22,6 @@ export const Bio = {
     "an NLP Engineer",
     "an ML Engineer",
     "a Programmer",
-    "a full stack developer",
     // "an AI Enthusiast",
   ],
   description:
@@ -45,67 +44,65 @@ export const skills = [
         image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
       },
       {
-        name: "Data Structures",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTREy-fzeS9qXjXXYqvXmzE4fwv3WoqRD4Uhroz38dDPhponWbJTvQHa4YB1NTy_zb08k",
-      },
-      {
         name: "Java",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
       },
       {
-        name: "JavaScript",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-      },
-      {
-        name: "SQL",
-        image:
-          "https://imgs.search.brave.com/G6nmo1F0-Q_eLPtu24jg_2ryvihj4MJQkiS2b5aA2SU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzZmL1NxbF9kYXRh/YmFzZV9zaG9ydGN1/dF9pY29uLnBuZw",
+        name: "Statistics",
+        image: "https://img.icons8.com/color/48/000000/graphical-view.png",
       },
     ]
   },
-  // {
-  //   title: "Data Science/ Machine Learning/ Deep Learning",
-  //   skills: [
-  //     {
-  //       name: "Python",
-  //       image:
-  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-  //     },      
-  //     {
-  //       name: "Supervised learning algos",
-  //       image:
-  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-  //     },
-  //     {
-  //       name: "Unsupervised learning algos",
-  //       image:
-  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-  //     },
-  //     {
-  //       name: "CNN",
-  //       image:
-  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-  //     },
-  //     {
-  //       name: "EDA",
-  //       image:
-  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-  //     },
-  //     // {
-  //     //   name: "Feature engineering",
-  //     //   image:
-  //     //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-  //     // },
-  //     // {
-  //     //   name: "Feature selection",
-  //     //   image:
-  //     //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-  //     // },
-  //   ],
-  // },
+  {
+    title: "AI & Machine Learning",
+    skills: [
+      {
+        name: "Machine Learning",
+        image: "https://img.icons8.com/color/48/000000/machine-learning.png",
+      },
+      {
+        name: "Deep Learning",
+        image: "https://img.icons8.com/color/48/000000/brain-mri.png",
+      },
+      {
+        name: "Generative Ai",
+        image: "https://img.icons8.com/fluency/48/000000/artificial-intelligence.png",
+      },
+      {
+        name: "Natural Language Processing",
+        image: "https://img.icons8.com/color/48/000000/nlp.png",
+      },
+    ]
+  },
+  {
+    title: "AI Agents & Frameworks",
+    skills: [
+      {
+        name: "Langchain",
+        image: "https://img.icons8.com/color/48/000000/bird.png",
+      },
+      {
+        name: "Llamaindex",
+        image: "https://img.icons8.com/color/48/000000/llama.png",
+      },
+      {
+        name: "CrewAI",
+        image: "https://img.icons8.com/color/48/000000/group.png",
+      },
+      {
+        name: "LangGraph",
+        image: "https://img.icons8.com/color/48/000000/graph.png",
+      },
+      {
+        name: "PhiData",
+        image: "https://img.icons8.com/color/48/000000/data-configuration.png",
+      },
+      {
+        name: "RAGS",
+        image: "https://img.icons8.com/color/48/000000/search.png",
+      },
+    ]
+  },
   {
     title: "Python packages and frameworks",
     skills: [
@@ -264,21 +261,43 @@ export const skills = [
   // },
 
   {
-    title: "Version Control",
-    skills: [
-
+    title: "Cloud & MLOps",
+    skills:
+    {
+      name: "AWS",
+      image: "https://imgs.search.brave.com/oeZjwCIkHNQecCCzkK_X45WNIavPDrmCJ1-36IcVAYw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85LzkzL0Ft/YXpvbl9XZWJfU2Vy/dmljZXNfTG9nby5z/dmcvMjIwcHgtQW1h/em9u/X1dlYl9TZXJ2/aWNlc19Mb2dvLnN2/Zy5wbmc",
+    },
       {
-        name: "Git",
-        image:
-          "https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png",
-      },
-      {
-        name: "GitHub",
-        image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      },
-    ],
+    name: "Docker",
+    image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
   },
+  {
+    name: "MLOPS",
+    image: "https://img.icons8.com/color/48/000000/infinity.png",
+  },
+  {
+    name: "Git",
+    image: "https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png",
+  },
+]
+  },
+{
+  title: "Tools & Others",
+    skills: [
+      {
+        name: "Tableau",
+        image: "https://img.icons8.com/color/48/000000/tableau.png",
+      },
+      {
+        name: "Cursor IDE",
+        image: "https://img.icons8.com/color/48/000000/cursor.png",
+      },
+      {
+        name: "n8n, Zapier, Make.com",
+        image: "https://img.icons8.com/color/48/000000/workflow.png",
+      },
+    ]
+},
 ];
 
 export const experiences = [
