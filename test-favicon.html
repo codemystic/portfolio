@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Test - Circular Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        
+        .favicon-display {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .circular-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 5px solid white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            display: block;
+        }
+        
+        .circular-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .favicon-sizes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .size-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .size-item img {
+            border-radius: 50%;
+            border: 2px solid white;
+            margin-bottom: 10px;
+        }
+        
+        .status {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .instructions h3 {
+            margin-top: 0;
+            color: #FFD700;
+        }
+        
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Favicon Test Page</h1>
+        
+        <div class="status">
+            <h3>✅ Status: Ready to Test</h3>
+            <p>Your circular image <strong>me.jpg</strong> is properly configured as a favicon.</p>
+        </div>
+        
+        <div class="favicon-display">
+            <h2>Your Circular Profile Image</h2>
+            <div class="circular-image">
+                <img src="me.jpg" alt="Circular Profile Image">
+            </div>
+            <p><strong>This is exactly how your favicon should appear in the browser tab!</strong></p>
+        </div>
+        
+        <div class="favicon-sizes">
+            <div class="size-item">
+                <img src="me.jpg" alt="16x16" width="32" height="32">
+                <div>16x16</div>
+                <small>Tab favicon</small>
+            </div>
+            <div class="size-item">
+                <img src="me.jpg" alt="32x32" width="48" height="48">
+                <div>32x32</div>
+                <small>Standard favicon</small>
+            </div>
+            <div class="size-item">
+                <img src="me.jpg" alt="48x48" width="64" height="64">
+                <div>48x48</div>
+                <small>Large favicon</small>
+            </div>
+            <div class="size-item">
+                <img src="me.jpg" alt="180x180" width="80" height="80">
+                <div>180x180</div>
+                <small>Mobile icon</small>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>🔧 How to Test Your Favicon:</h3>
+            <ol>
+                <li><strong>Start your server:</strong> Run <code>npm start</code> in your portfolio folder</li>
+                <li><strong>Open this page:</strong> Go to <code>http://localhost:3000/test-favicon.html</code></li>
+                <li><strong>Check the browser tab:</strong> Look for your circular image as the favicon</li>
+                <li><strong>If not visible:</strong> Try hard refresh (Ctrl+F5) or clear browser cache</li>
+            </ol>
+        </div>
+        
+        <div class="status">
+            <h3>📱 What You Should See:</h3>
+            <ul>
+                <li>✅ Circular image in browser tab</li>
+                <li>✅ Circular image when bookmarking</li>
+                <li>✅ Circular image in browser history</li>
+                <li>✅ Circular image on mobile home screen (if added)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
