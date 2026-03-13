@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.b364acf6.css",
-    "main.js": "/static/js/main.897646b7.js",
-    "static/media/Trizen.png": "/static/media/Trizen.a1b51e8b21846588ee12.png",
-    "static/media/water.png": "/static/media/water.d48ee7de12b391686510.png",
-    "static/media/Interface.png": "/static/media/Interface.21da455c1a67553e8771.png",
-    "static/media/vit.jpg": "/static/media/vit.ea5685ceac579f9a60bc.jpg",
-    "static/media/g20.jpg": "/static/media/g20.f166b92bfe6c0a6f1b48.jpg",
-    "static/media/msme.jpg": "/static/media/msme.6111f097cf2051b64e98.jpg",
-    "static/media/seaborn.png": "/static/media/seaborn.21977541a546f6ae1701.png",
-    "static/media/port.jpg": "/static/media/port.865491e60c080dbf1b96.jpg",
-    "static/media/me.jpg": "/static/media/me.f8dfb07af1bc4f0e7e02.jpg",
-    "static/media/pandas.png": "/static/media/pandas.74413d481875eeccaf85.png",
-    "static/media/tensorflow.jpg": "/static/media/tensorflow.6ea17bf36ac095083b26.jpg",
-    "index.html": "/index.html",
-    "main.b364acf6.css.map": "/static/css/main.b364acf6.css.map",
-    "main.897646b7.js.map": "/static/js/main.897646b7.js.map"
+    "main.css": "/portfolio/static/css/main.b364acf6.css",
+    "main.js": "/portfolio/static/js/main.aaaf3b14.js",
+    "static/media/Trizen.png": "/portfolio/static/media/Trizen.a1b51e8b21846588ee12.png",
+    "static/media/water.png": "/portfolio/static/media/water.d48ee7de12b391686510.png",
+    "static/media/Interface.png": "/portfolio/static/media/Interface.21da455c1a67553e8771.png",
+    "static/media/vit.jpg": "/portfolio/static/media/vit.ea5685ceac579f9a60bc.jpg",
+    "static/media/g20.jpg": "/portfolio/static/media/g20.f166b92bfe6c0a6f1b48.jpg",
+    "static/media/msme.jpg": "/portfolio/static/media/msme.6111f097cf2051b64e98.jpg",
+    "static/media/seaborn.png": "/portfolio/static/media/seaborn.21977541a546f6ae1701.png",
+    "static/media/port.jpg": "/portfolio/static/media/port.865491e60c080dbf1b96.jpg",
+    "static/media/me.jpg": "/portfolio/static/media/me.f8dfb07af1bc4f0e7e02.jpg",
+    "static/media/pandas.png": "/portfolio/static/media/pandas.74413d481875eeccaf85.png",
+    "static/media/tensorflow.jpg": "/portfolio/static/media/tensorflow.6ea17bf36ac095083b26.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.b364acf6.css.map": "/portfolio/static/css/main.b364acf6.css.map",
+    "main.aaaf3b14.js.map": "/portfolio/static/js/main.aaaf3b14.js.map"
   },
   "entrypoints": [
     "static/css/main.b364acf6.css",
-    "static/js/main.897646b7.js"
+    "static/js/main.aaaf3b14.js"
   ]
 }
