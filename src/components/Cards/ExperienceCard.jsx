@@ -7,6 +7,7 @@ const Document = styled.img`
     width: fit-content;
     background-color: #000;
     border-radius: 10px;
+    
     &:hover{
         cursor: pointer;
         opacity: 0.8;
@@ -17,96 +18,64 @@ const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    margin-bottom: 10px;
+    color: ${({ theme }) => theme.text_secondary};
+    line-height: 1.6;
+    
     @media only screen and (max-width: 768px){
-        font-size: 12px;
+        font-size: 13px;
     }
 `
 
 const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
+    display: block;
+    margin-bottom: 12px;
 `
 
 const Card = styled.div`
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    padding: 28px 32px;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
+    padding: 24px 32px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-    border: 2px solid ${({ theme }) => theme.primary}20;
-    
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: linear-gradient(90deg, ${({ theme }) => theme.primary}, #3b82f6, ${({ theme }) => theme.primary});
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-    }
+    background: ${({ theme }) => theme.bgLight};
+    border: 1px solid ${({ theme }) => theme.card_light};
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     
     &:hover{
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        transform: translateY(-10px) scale(1.02);
-        border-color: ${({ theme }) => theme.primary}60;
-        
-        &::before {
-            transform: scaleX(1);
-        }
+        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+        border-color: ${({ theme }) => theme.primary}40;
     }
     
     @media only screen and (max-width: 768px){
-        padding: 24px 28px;
-        gap: 16px;
-        width: 300px;
+        padding: 20px;
     }
 
     &:hover ${Document}{
         display: flex;
-    }
-
-    &:hover ${Span}{
-        overflow: visible;
-        -webkit-line-clamp: unset;
     }
 `
 
 const Top = styled.div`
     width: 100%;
     display: flex;
-    gap: 12px
+    gap: 16px;
 `
 
 const Image = styled.img`
     height: 50px;
+    width: 50px;
     background-color: #000;
     border-radius: 12px;
-    margin-top: 4px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-    
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    }
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     
     @media only screen and (max-width: 768px){
         height: 40px;
+        width: 40px;
     }
 `
 
@@ -116,40 +85,43 @@ const Body = styled.div`
     flex-direction: column; 
 `
 
-
-const Role = styled.div`
-    font-size: 18px;
-    font-weight: 800;
+const Role = styled.h4`
+    font-size: 20px;
+    font-weight: 700;
     color: ${({ theme }) => theme.text_primary};
+    font-family: 'Outfit', sans-serif;
+    
     @media only screen and (max-width: 768px){
-        font-size: 14px;
+        font-size: 16px;
     }
 `
 
 const Company = styled.div`
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 600;
     color: ${({ theme }) => theme.text_secondary};
+    
     @media only screen and (max-width: 768px){
-        font-size: 12px;
+        font-size: 13px;
     }
 `
 
-const Date = styled.div`
-    font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+const DateStr = styled.div`
+    font-size: 13px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_secondary};
+    opacity: 0.7;
+    
     @media only screen and (max-width: 768px){
-        font-size: 10px;
+        font-size: 11px;
     }
 `
-
 
 const Skills = styled.div`
     width: 100%;
     display: flex;
-    gap: 12px;
-    margin-top: -10px;
+    gap: 8px;
+    margin-top: 4px;
 `
 
 const ItemWrapper = styled.div`
@@ -158,52 +130,43 @@ const ItemWrapper = styled.div`
     gap: 8px;
 `
 
-const Skill = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
+const Skill = styled.span`
+    font-size: 13px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_secondary};
+    background: ${({ theme }) => theme.card_light};
+    padding: 2px 10px;
+    border-radius: 50px;
 `
-
-
 
 const ExperienceCard = ({ experience }) => {
     return (
         <Card>
             <Top>
-                <Image src={experience.img} />
+                <Image src={experience.img} alt={experience.company} />
                 <Body>
                     <Role>{experience.role}</Role>
                     <Company>{experience.company}</Company>
-                    <Date>{experience.date}</Date>
+                    <DateStr>{experience.date}</DateStr>
                 </Body>
             </Top>
             <Description>
-                {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
-
-                }
-                {experience?.skills &&
-                    <>
-                        <br />
-                        <Skills>
-                            <b>Skills:</b>
-                            <ItemWrapper>
-                                {experience?.skills?.map((skill, index) => (
-                                    <Skill>• {skill}</Skill>
-                                ))}
-                            </ItemWrapper>
-                        </Skills>
-                    </>
-                }
+                {experience?.desc && <Span>{experience?.desc}</Span>}
+                {experience?.skills && (
+                    <Skills>
+                        <ItemWrapper>
+                            {experience?.skills?.map((skill, index) => (
+                                <Skill key={index}>• {skill}</Skill>
+                            ))}
+                        </ItemWrapper>
+                    </Skills>
+                )}
             </Description>
-            {experience.doc &&
-                <a href={experience.doc} target="new">
+            {experience.doc && (
+                <a href={experience.doc} target="_blank" rel="noopener noreferrer">
                     <Document src={experience.doc} />
                 </a>
-            }
+            )}
         </Card>
     )
 }

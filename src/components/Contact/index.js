@@ -11,29 +11,9 @@ const Container = styled.div`
   position: relative;
   z-index: 10;
   align-items: center;
-  padding: 40px 0px 60px 0px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 24px;
-  margin: 20px;
-  position: relative;
-  overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.3;
-  }
-  
-  @media (max-width: 960px) {
-    padding: 30px 0px 40px 0px;
-    margin: 16px;
-  }
-`
+  padding: 80px 0;
+  width: 100%;
+`;
 
 const Wrapper = styled.div`
   position: relative;
@@ -42,126 +22,112 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 24px;
+  max-width: 1100px;
   gap: 32px;
-  z-index: 2;
   
   @media (max-width: 960px) {
     flex-direction: column;
-    padding: 0 16px;
-    gap: 24px;
   }
-`
+`;
 
-const Title = styled.div`
+const Title = styled.h2`
   font-size: 48px;
   text-align: center;
   font-weight: 800;
   margin-top: 16px;
-  color: white;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  letter-spacing: -0.02em;
+  color: ${({ theme }) => theme.text_primary};
   
   @media (max-width: 768px) {
-    margin-top: 12px;
     font-size: 36px;
   }
 `;
 
 const Desc = styled.div`
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
   max-width: 600px;
-  color: rgba(255, 255, 255, 0.9);
+  color: ${({ theme }) => theme.text_secondary};
   line-height: 1.6;
-  font-weight: 400;
+  margin-bottom: 24px;
   
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 `;
 
 const ContactFormContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
   width: 100%;
-  max-width: 1000px;
+  margin-top: 24px;
   
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 32px;
   }
 `
 
 const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  color: white;
+  gap: 20px;
 `
 
 const InfoCard = styled.div`
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  background: ${({ theme }) => theme.bgLight};
+  border: 1px solid ${({ theme }) => theme.card_light};
+  border-radius: 20px;
   padding: 24px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   
   &:hover {
-    background: rgba(255, 255, 255, 0.15);
     transform: translateY(-4px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
+    border-color: ${({ theme }) => theme.primary}30;
   }
 `
 
 const InfoTitle = styled.h3`
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   margin-bottom: 8px;
-  color: white;
+  color: ${({ theme }) => theme.text_primary};
+  display: flex;
+  align-items: center;
+  gap: 10px;
 `
 
 const InfoText = styled.p`
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  color: ${({ theme }) => theme.text_secondary};
   line-height: 1.5;
+  margin-bottom: 0;
 `
 
 const ContactForm = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
+  background: ${({ theme }) => theme.bgLight};
+  border: 1px solid ${({ theme }) => theme.card_light};
   padding: 40px;
   border-radius: 24px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
   gap: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease-in-out;
-  
-  &:hover {
-    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.2);
-    transform: translateY(-8px);
-  }
   
   @media (max-width: 768px) {
-    padding: 30px 24px;
+    padding: 24px;
   }
 `
 
-const ContactTitle = styled.div`
-  font-size: 32px;
-  margin-bottom: 16px;
+const ContactTitle = styled.h3`
+  font-size: 28px;
+  margin-bottom: 8px;
   font-weight: 700;
-  color: #1f2937;
-  text-align: center;
-  
-  @media (max-width: 768px) {
-    font-size: 28px;
-  }
+  color: ${({ theme }) => theme.text_primary};
+  font-family: 'Outfit', sans-serif;
 `
 
 const InputGroup = styled.div`
@@ -176,42 +142,31 @@ const InputGroup = styled.div`
 
 const ContactInput = styled.input`
   flex: 1;
-  background-color: #f8fafc;
-  border: 2px solid #e2e8f0;
+  background-color: ${({ theme }) => theme.bg};
+  border: 2px solid ${({ theme }) => theme.card_light};
   outline: none;
   font-size: 16px;
-  color: #1f2937;
-  border-radius: 16px;
-  padding: 16px 20px;
+  color: ${({ theme }) => theme.text_primary};
+  border-radius: 14px;
+  padding: 14px 18px;
   transition: all 0.3s ease;
   font-weight: 500;
   
   &:focus {
-    border: 2px solid #667eea;
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
-    background-color: white;
-  }
-  
-  &::placeholder {
-    color: #94a3b8;
-    font-weight: 400;
-  }
-  
-  &:hover {
-    border-color: #cbd5e1;
-    background-color: white;
+    border-color: ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.bgLight};
   }
 `
 
 const ContactInputMessage = styled.textarea`
   width: 100%;
-  background-color: #f8fafc;
-  border: 2px solid #e2e8f0;
+  background-color: ${({ theme }) => theme.bg};
+  border: 2px solid ${({ theme }) => theme.card_light};
   outline: none;
   font-size: 16px;
-  color: #1f2937;
-  border-radius: 16px;
-  padding: 16px 20px;
+  color: ${({ theme }) => theme.text_primary};
+  border-radius: 14px;
+  padding: 14px 18px;
   resize: vertical;
   min-height: 140px;
   transition: all 0.3s ease;
@@ -219,67 +174,32 @@ const ContactInputMessage = styled.textarea`
   font-family: inherit;
   
   &:focus {
-    border: 2px solid #667eea;
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
-    background-color: white;
-  }
-  
-  &::placeholder {
-    color: #94a3b8;
-    font-weight: 400;
-  }
-  
-  &:hover {
-    border-color: #cbd5e1;
-    background-color: white;
+    border-color: ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.bgLight};
   }
 `
 
 const ContactButton = styled.button`
   width: 100%;
-  text-decoration: none;
-  text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 18px 24px;
-  margin-top: 8px;
-  border-radius: 16px;
+  background: ${({ theme }) => theme.primary};
+  padding: 16px 24px;
+  border-radius: 14px;
   border: none;
   color: white;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-  }
+  box-shadow: 0 10px 20px -10px ${({ theme }) => theme.primary};
   
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-    
-    &::before {
-      left: 100%;
-    }
-  }
-  
-  &:active {
-    transform: translateY(-1px);
+    background: ${({ theme }) => theme.primary}dd;
+    box-shadow: 0 15px 30px -10px ${({ theme }) => theme.primary}80;
   }
 `
 
 const Contact = () => {
-
-  //hooks
   const [open, setOpen] = React.useState(false);
   const form = useRef();
 
@@ -299,53 +219,46 @@ const Contact = () => {
       <Wrapper>
         <Title>Get In Touch</Title>
         <Desc>Ready to start a conversation? I'd love to hear from you and explore how we can work together!</Desc>
-        
+
         <ContactFormContainer>
           <ContactInfo>
             <InfoCard>
               <InfoTitle>📍 Location</InfoTitle>
               <InfoText>Hyderabad, Telangana, India</InfoText>
             </InfoCard>
-            
             <InfoCard>
               <InfoTitle>📧 Email</InfoTitle>
               <InfoText>Available for opportunities and collaborations</InfoText>
             </InfoCard>
-            
             <InfoCard>
               <InfoTitle>💼 Availability</InfoTitle>
               <InfoText>Open to new projects and exciting opportunities</InfoText>
             </InfoCard>
-            
             <InfoCard>
               <InfoTitle>🚀 Let's Connect</InfoTitle>
               <InfoText>Whether you have a question or just want to say hi, I'll try my best to get back to you!</InfoText>
             </InfoCard>
           </ContactInfo>
-          
+
           <ContactForm ref={form} onSubmit={handleSubmit}>
             <ContactTitle>Send Message</ContactTitle>
-            
             <InputGroup>
               <ContactInput placeholder="Your Name" name="from_name" required />
               <ContactInput placeholder="Your Email" name="from_email" type="email" required />
             </InputGroup>
-            
             <ContactInput placeholder="Subject" name="subject" required />
             <ContactInputMessage placeholder="Tell me about your project or just say hello..." rows="4" name="message" required />
-            
             <ContactButton type="submit">
               Send Message ✨
             </ContactButton>
           </ContactForm>
         </ContactFormContainer>
-        
+
         <Snackbar
           open={open}
           autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
+          onClose={() => setOpen(false)}
           message="Email sent successfully!"
-          severity="success"
         />
       </Wrapper>
     </Container>

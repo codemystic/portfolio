@@ -1,45 +1,37 @@
 import styled from "styled-components";
-import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
-  background: #ffffff;
+  background: ${({ theme }) => theme.card};
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 100px 30px;
+  padding: 120px 30px;
+  
   @media (max-width: 960px) {
     padding: 80px 16px;
   }
-  @media (max-width: 640) {
+  
+  @media (max-width: 640px) {
     padding: 60px 16px;
   }
+  
   z-index: 1;
-  border-bottom: 1px solid #e5e7eb;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid ${({ theme }) => theme.card_light};
 `;
 
 export const HeroBg = styled.div`
   position: absolute;
-  display: flex;
-  justify-content: end;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  max-width: 1360px;
   overflow: hidden;
-  padding: 0 30px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-
-  @media (max-width: 960px) {
-    justify-content: center;
-    padding: 0 0px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
 `;
 
 export const HeroInnerContainer = styled.div`
@@ -49,110 +41,77 @@ export const HeroInnerContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 1100px;
-  min-height: 400px;
-
-  @media (max-width: 768px) {
-    min-height: 350px;
-  }
+  gap: 40px;
 
   @media (max-width: 960px) {
-    flex-direction: column;
-  }
-
-  @media (max-width: 640px) {
-    min-height: 280px;
+    flex-direction: column-reverse;
   }
 `;
+
 export const HeroLeftContainer = styled.div`
   width: 100%;
   order: 1;
+  
   @media (max-width: 960px) {
-    order: 2;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  @media (max-width: 640px) {
-    order: 2;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 `;
 
 export const HeroRightContainer = styled.div`
   width: 100%;
   display: flex;
-  order: 2;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  gap: 12px;
-  min-height: 400px;
-  @media (max-width: 768px) {
-    min-height: 350px;
-  }
+  order: 2;
+  
   @media (max-width: 960px) {
-    order: 1;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 80px;
-  }
-
-  @media (max-width: 640px) {
-    margin-bottom: 30px;
-    min-height: 280px;
+    margin-bottom: 40px;
   }
 `;
 
 export const Img = styled.img`
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 4px solid ${({ theme }) => theme.primary}20;
   object-fit: cover;
   object-position: center;
-  flex-shrink: 0;
-  background-color: ${({ theme }) => theme.card};
-  display: block;
-  min-width: 400px;
-  min-height: 400px;
-  box-sizing: border-box;
-  z-index: 1;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.25);
+  }
 
   @media (max-width: 768px) {
-    width: 350px;
-    height: 350px;
-    min-width: 350px;
-    min-height: 350px;
+    width: 320px;
+    height: 320px;
   }
 
   @media (max-width: 640px) {
-    width: 280px;
-    height: 280px;
-    min-width: 280px;
-    min-height: 280px;
+    width: 260px;
+    height: 260px;
   }
 `;
 
-export const Title = styled.div`
-  font-weight: 700;
-  font-size: 50px;
+export const Title = styled.h1`
+  font-weight: 800;
+  font-size: 56px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
-  @media (max-width: 960px) {
-    text-align: center;
+  line-height: 1.1;
+  margin-bottom: 12px;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
   }
 
   @media (max-width: 640px) {
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 8px;
+    font-size: 32px;
   }
 `;
 
@@ -162,79 +121,68 @@ export const TextLoop = styled.div`
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
-  @media (max-width: 960px) {
-    text-align: center;
+  line-height: 1.5;
+  margin-bottom: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    justify-content: center;
   }
+
   @media (max-width: 640px) {
-    font-size: 22px;
-    line-height: 48px;
-    margin-bottom: 16px;
+    font-size: 20px;
   }
 `;
 
 export const Span = styled.span`
-  color: #3b82f6 !important;
+  color: ${({ theme }) => theme.primary};
   cursor: pointer;
   
   .Typewriter__cursor {
-    color: #3b82f6 !important;
-  }
-  
-  .Typewriter__wrapper {
-    color: #3b82f6 !important;
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
 export const SubTitle = styled.div`
   font-size: 20px;
-  line-height: 32px;
+  line-height: 1.6;
   margin-bottom: 42px;
-  color: ${({ theme }) => theme.text_primary + 95};
+  color: ${({ theme }) => theme.text_secondary};
+  max-width: 500px;
 
-  @media (max-width: 960px) {
-    text-align: center;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    max-width: 100%;
   }
 
   @media (max-width: 640px) {
     font-size: 16px;
-    line-height: 32px;
   }
 `;
 
 export const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    filter: brightness(1);
-    border-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
+  text-decoration: none;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  padding: 16px 32px;
+  color: #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  background: ${({ theme }) => theme.primary};
+  box-shadow: 0 10px 20px -10px ${({ theme }) => theme.primary};
+  
+  &:hover {
+    transform: translateY(-3px);
+    background: ${({ theme }) => theme.primary}dd;
+    box-shadow: 0 15px 30px -10px ${({ theme }) => theme.primary}80;
+  }
 
+  @media (max-width: 640px) {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
 `;

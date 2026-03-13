@@ -18,30 +18,22 @@ import Highlights from "./Highlights.jsx";
 import Testimonial from "./components/Testimonials/Testimonial.js";
 
 const Body = styled.div`
-  background: #fafafa;
+  background: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
 `
 
 const Wrapper = styled.div`
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  margin: 12px 20px;
-  width: calc(100% - 40px);
-  padding: 24px 0;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
   
-  &:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transform: translateY(-1px);
+  @media (max-width: 768px) {
+    padding: 0 16px;
   }
 `
 
@@ -49,16 +41,19 @@ const MainContent = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  position: relative;
-  z-index: 2;
-  padding-top: 12px;
+  gap: 60px;
+  padding: 80px 0;
+
+  @media (max-width: 768px) {
+    gap: 40px;
+    padding: 60px 0;
+  }
 `
 
 function App() {
   const [darkMode, setDarkMode] = useState(false); // Force light mode to match referenced site
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >

@@ -17,14 +17,8 @@ const Container = styled.div`
     position: relative;
     z-index: 10;
     align-items: center;
-    padding: 24px 0px 32px 0px;
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 16px;
-    margin: 12px;
-    @media (max-width: 960px) {
-        padding: 20px 0px 28px 0px;
-    }
+    padding: 0;
+    width: 100%;
 `;
 
 const Wrapper = styled.div`
@@ -34,36 +28,38 @@ const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1350px;
-    padding: 24px 0;
-    gap: 16px;
+    max-width: 1200px;
+    padding: 40px 0;
+    gap: 32px;
+    
     @media (max-width: 960px) {
-        flex-direction: column;
-        padding: 20px 0;
+        padding: 32px 0;
     }
 `;
 
-export const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 16px;
+export const Title = styled.h2`
+  font-size: 48px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 12px;
   color: ${({ theme }) => theme.text_primary};
+  
   @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
+    font-size: 36px;
   }
 `;
 
 export const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 700px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
+  font-size: 19px;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-bottom: 24px;
+  
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
 `;
 
 const TimelineSection = styled.div`
@@ -89,14 +85,14 @@ const index = () => {
                 </Desc>
                 <TimelineSection>
                     <Timeline>
-                        {experiences.map((experience,index) => (
+                        {experiences.map((experience, index) => (
                             <TimelineItem>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
                                     {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <ExperienceCard experience={experience}/>
+                                    <ExperienceCard experience={experience} />
                                 </TimelineContent>
                             </TimelineItem>
                         ))}
