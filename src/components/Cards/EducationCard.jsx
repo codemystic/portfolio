@@ -1,23 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-const Card = styled.div`
+const Card = styled(motion.div)`
   width: 100%;
-  max-width: 650px;
-  border-radius: 20px;
-  padding: 24px 32px;
+  max-width: 500px;
+  border-radius: 16px;
+  padding: 20px 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 12px;
+  transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s ease;
   background: ${({ theme }) => theme.bgLight};
-  border: 1px solid ${({ theme }) => theme.card_light};
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  border: 1.5px solid ${({ theme }) => theme.primary}15;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
   
   &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
-    border-color: ${({ theme }) => theme.primary}30;
+    box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.1);
+    border-color: ${({ theme }) => theme.primary}80;
   }
   
   @media only screen and (max-width: 768px) {
@@ -33,16 +33,16 @@ const Top = styled.div`
 `;
 
 const Image = styled.img`
-  height: 50px;
-  width: 50px;
+  height: 54px;
+  width: 54px;
   background-color: white;
-  border-radius: 12px;
+  border-radius: 14px;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   
   @media only screen and (max-width: 768px) {
-    height: 40px;
-    width: 40px;
+    height: 44px;
+    width: 44px;
   }
 `;
 
@@ -54,19 +54,21 @@ const Body = styled.div`
 `;
 
 const Name = styled.h4`
+  font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
   color: ${({ theme }) => theme.text_primary};
-  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.02em;
   
   @media only screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 17px;
   }
 `;
 
 const Degree = styled.div`
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   color: ${({ theme }) => theme.primary};
   
   @media only screen and (max-width: 768px) {
@@ -75,34 +77,38 @@ const Degree = styled.div`
 `;
 
 const DateStr = styled.div`
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
-  opacity: 0.7;
+  opacity: 0.8;
   
   @media only screen and (max-width: 768px) {
-    font-size: 11px;
+    font-size: 12px;
   }
 `;
 
 const Grade = styled.div`
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: ${({ theme }) => theme.text_secondary};
-  background: ${({ theme }) => theme.card_light};
-  padding: 6px 12px;
+  background: ${({ theme }) => theme.primary}10;
+  padding: 6px 14px;
   border-radius: 12px;
   width: fit-content;
+  border: 1px solid ${({ theme }) => theme.primary}20;
   
   b {
-    color: ${({ theme }) => theme.text_primary};
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
 const Description = styled.div`
   width: 100%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   color: ${({ theme }) => theme.text_secondary};
   line-height: 1.6;
 `;
@@ -113,7 +119,10 @@ const Span = styled.span`
 
 const EducationCard = ({ education }) => {
   return (
-    <Card>
+    <Card
+      whileHover={{ y: -8, scale: 1.01 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
       <Top>
         <Image src={education.img} alt={education.school} />
         <Body>

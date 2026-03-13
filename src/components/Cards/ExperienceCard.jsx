@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 const Document = styled.img`
     display: none;
@@ -17,7 +18,7 @@ const Document = styled.img`
 const Description = styled.div`
     width: 100%;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     color: ${({ theme }) => theme.text_secondary};
     line-height: 1.6;
     
@@ -31,27 +32,28 @@ const Span = styled.span`
     margin-bottom: 12px;
 `
 
-const Card = styled.div`
-    width: 100%;
-    max-width: 650px;
-    border-radius: 20px;
-    padding: 24px 32px;
+const Card = styled(motion.div)`
+    flex: 1;
+    min-width: 300px;
+    max-width: 460px;
+    border-radius: 16px;
+    padding: 20px 24px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 12px;
+    transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s ease;
     background: ${({ theme }) => theme.bgLight};
-    border: 1px solid ${({ theme }) => theme.card_light};
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1.5px solid ${({ theme }) => theme.primary}15;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
     
     &:hover{
-        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
-        transform: translateY(-5px);
-        border-color: ${({ theme }) => theme.primary}40;
+        box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.1);
+        border-color: ${({ theme }) => theme.primary}80;
     }
     
     @media only screen and (max-width: 768px){
         padding: 20px;
+        min-width: 280px;
     }
 
     &:hover ${Document}{
@@ -66,16 +68,16 @@ const Top = styled.div`
 `
 
 const Image = styled.img`
-    height: 50px;
-    width: 50px;
+    height: 54px;
+    width: 54px;
     background-color: #000;
-    border-radius: 12px;
+    border-radius: 14px;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     
     @media only screen and (max-width: 768px){
-        height: 40px;
-        width: 40px;
+        height: 44px;
+        width: 44px;
     }
 `
 
@@ -87,33 +89,34 @@ const Body = styled.div`
 
 const Role = styled.h4`
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
     color: ${({ theme }) => theme.text_primary};
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: -0.02em;
     
     @media only screen and (max-width: 768px){
-        font-size: 16px;
+        font-size: 17px;
     }
 `
 
 const Company = styled.div`
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     color: ${({ theme }) => theme.text_secondary};
     
     @media only screen and (max-width: 768px){
-        font-size: 13px;
+        font-size: 14px;
     }
 `
 
 const DateStr = styled.div`
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     color: ${({ theme }) => theme.text_secondary};
-    opacity: 0.7;
+    opacity: 0.8;
     
     @media only screen and (max-width: 768px){
-        font-size: 11px;
+        font-size: 12px;
     }
 `
 
@@ -132,16 +135,20 @@ const ItemWrapper = styled.div`
 
 const Skill = styled.span`
     font-size: 13px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary};
-    background: ${({ theme }) => theme.card_light};
-    padding: 2px 10px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.primary};
+    background: ${({ theme }) => theme.primary}10;
+    padding: 2px 12px;
     border-radius: 50px;
+    border: 1px solid ${({ theme }) => theme.primary}20;
 `
 
 const ExperienceCard = ({ experience }) => {
     return (
-        <Card>
+        <Card
+            whileHover={{ y: -8, scale: 1.01 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
             <Top>
                 <Image src={experience.img} alt={experience.company} />
                 <Body>
@@ -156,7 +163,7 @@ const ExperienceCard = ({ experience }) => {
                     <Skills>
                         <ItemWrapper>
                             {experience?.skills?.map((skill, index) => (
-                                <Skill key={index}>• {skill}</Skill>
+                                <Skill key={index}>{skill}</Skill>
                             ))}
                         </ItemWrapper>
                     </Skills>

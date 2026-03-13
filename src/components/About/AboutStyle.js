@@ -7,7 +7,7 @@ export const Container = styled.div`
     position: relative;
     z-index: 10;
     align-items: center;
-    padding: 20px 0;
+    padding: 0;
     width: 100%;
 `;
 
@@ -19,48 +19,53 @@ export const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    gap: 32px;
-    padding: 40px 0;
+    gap: 20px;
+    padding: 20px 0;
 
     @media (max-width: 960px) {
-        padding: 32px 0;
+        padding: 10px 0;
     }
 `;
 
 export const Title = styled.h2`
-  font-size: 48px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 42px;
   text-align: center;
   font-weight: 800;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: ${({ theme }) => theme.text_primary};
+  letter-spacing: -0.04em;
   
   @media (max-width: 768px) {
-    font-size: 36px;
+    font-size: 32px;
   }
 `;
 
 export const Desc = styled.div`
-  font-size: 19px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
   text-align: center;
-  max-width: 800px;
+  max-width: 650px;
   line-height: 1.6;
   color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
   
   @media (max-width: 768px) {
-    font-size: 17px;
+    font-size: 16px;
   }
 `;
 
 export const SkillsGrid = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
   padding: 0 16px;
   
   @media (max-width: 960px) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
   }
 
   @media (max-width: 640px) {
@@ -70,22 +75,23 @@ export const SkillsGrid = styled.div`
 `;
 
 export const SkillCard = styled.div`
-  background: ${({ theme }) => theme.bgLight};
+  background: ${({ theme }) => theme.card};
   border: 1px solid ${({ theme }) => theme.card_light};
-  border-radius: 24px;
-  padding: 32px;
+  border-radius: 20px;
+  padding: 24px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.04);
   
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
-    border-color: ${({ theme }) => theme.primary}30;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+    border-color: ${({ theme }) => theme.primary}40;
   }
 `;
 
 export const SkillName = styled.h3`
-  font-size: 24px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 26px;
   font-weight: 700;
   color: ${({ theme }) => theme.text_primary};
   margin-bottom: 24px;
@@ -94,6 +100,7 @@ export const SkillName = styled.h3`
   align-items: center;
   justify-content: center;
   gap: 12px;
+  letter-spacing: -0.02em;
 `;
 
 export const SkillTag = styled.div`
@@ -108,7 +115,7 @@ export const TechLogo = styled.div`
   align-items: center;
   gap: 10px;
   padding: 10px 18px;
-  background: ${({ theme }) => theme.bg};
+  background: ${({ theme }) => theme.bgLight};
   border: 1px solid ${({ theme }) => theme.card_light};
   border-radius: 14px;
   transition: all 0.3s ease;
@@ -127,8 +134,9 @@ export const TechLogo = styled.div`
 `;
 
 export const TechName = styled.span`
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
 `;
 
@@ -144,10 +152,11 @@ export const ToggleButtonGroup = styled.div`
 `;
 
 export const ToggleButton = styled.div`
+    font-family: 'Plus Jakarta Sans', sans-serif;
     padding: 10px 24px;
     border-radius: 10px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
     transition: all 0.3s ease;
     
     ${({ active, theme }) =>

@@ -7,12 +7,12 @@ import { Bio } from '../../data/constants';
 
 const FooterContainer = styled.div`
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
-  background: #ffffff;
-  border-top: 1px solid #e5e7eb;
-  margin-top: 24px;
+  background: ${({ theme }) => theme.bg};
+  border-top: 1px solid ${({ theme }) => theme.card_light}40;
+  margin-top: 10px;
 `;
 
 

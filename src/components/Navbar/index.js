@@ -1,18 +1,23 @@
 import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileMenuLink, MobileMenuButton } from './NavbarStyledComponent'
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileMenuLink, MobileMenuButton, ThemeToggle } from './NavbarStyledComponent'
+import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import { useTheme } from 'styled-components';
+import { motion } from 'framer-motion';
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme()
 
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to='/'>
-          <Span>Coder</Span>Mystic
+        <NavLogo to='/' as={motion.a}
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+        >
+          <Span>Port</Span>folio
         </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
@@ -20,15 +25,29 @@ const Navbar = () => {
         </MobileIcon>
 
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#experience'>Experience</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
+          {['About', 'Skills', 'Experience', 'Projects', 'Education'].map((item, index) => (
+              <motion.div
+                  key={item}
+                  initial={{ y: -20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                  <NavLink href={`#${item.toLowerCase()}`}>{item}</NavLink>
+              </motion.div>
+          ))}
         </NavItems>
 
         <ButtonContainer>
-          <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
+          <ThemeToggle onClick={() => setDarkMode(!darkMode)}>
+            {darkMode ? <FaSun /> : <FaMoon />}
+          </ThemeToggle>
+          <motion.div
+              initial={{ x: 20, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+          >
+            <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
+          </motion.div>
         </ButtonContainer>
 
         <MobileMenu isOpen={isOpen}>
@@ -47,7 +66,7 @@ const Navbar = () => {
           <MobileMenuLink href='#education' onClick={() => setIsOpen(!isOpen)}>
             Education
           </MobileMenuLink>
-          <MobileMenuButton href={Bio.github} target="_blank">
+          <MobileMenuButton href={Bio.github} target="_blank" style={{padding: '10px 16px', background: theme.primary, color: 'white', width: 'max-content'}}>
             Github Profile
           </MobileMenuButton>
         </MobileMenu>

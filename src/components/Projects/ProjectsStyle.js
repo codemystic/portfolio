@@ -20,36 +20,39 @@ export const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    padding: 40px 0;
-    gap: 32px;
+    padding: 20px 0;
+    gap: 24px;
     
     @media (max-width: 960px) {
-        padding: 32px 0;
+        padding: 10px 0;
     }
 `;
 
 export const Title = styled.h2`
-  font-size: 48px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 42px;
   text-align: center;
   font-weight: 800;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: ${({ theme }) => theme.text_primary};
+  letter-spacing: -0.04em;
   
   @media (max-width: 768px) {
-    font-size: 36px;
+    font-size: 32px;
   }
 `;
 
 export const Desc = styled.div`
-  font-size: 19px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
   text-align: center;
-  max-width: 800px;
+  max-width: 650px;
   line-height: 1.6;
   color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   
   @media (max-width: 768px) {
-    font-size: 17px;
+    font-size: 16px;
   }
 `;
 
